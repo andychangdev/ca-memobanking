@@ -27,3 +27,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa ipsum aliqu
 ## 🎨 Wireframes
 
 ## 📝 Project Development Log
+
+In this project, I have opted to use a Kanban workflow as my method of planning and tracking the development of my application. Each column represents a different phase of development. Cards flow from one column to the next as they progress towards completion. The workflow involves the following phases: Backlog, To-Do, In-Progress, Testing and Done.
+
+
+**10-03-2024:**
+
+![screenshot](./docs/kanban/04-07-2024.jpeg)
+#### Generate Project Idea Checklist:
+![screenshot](./docs/checklists/generate_project_idea.png)
+#### Write Project Documentation Checklist:
+![screenshot](./docs/checklists/write_project_documentation.png)
+#### Design Application UX/UI Design Checklist:
+![screenshot](./docs/checklists/design_uxui_design.png)
