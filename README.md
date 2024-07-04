@@ -33,10 +33,16 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 **10-03-2024:**
 
-![screenshot](./docs/kanban/04-07-2024.jpeg)
-#### Generate Project Idea Checklist:
-![screenshot](./docs/checklists/generate_project_idea.png)
-#### Write Project Documentation Checklist:
-![screenshot](./docs/checklists/write_project_documentation.png)
-#### Design Application UX/UI Design Checklist:
-![screenshot](./docs/checklists/design_uxui_design.png)
+<img src="./docs/kanban/04-07-2024.jpeg">
+
+**Generate Project Idea Checklist:**
+
+<img src="./docs/checklists/generate_project_idea.png" width="500">
+
+**Write Project Documentation Checklist:**
+
+<img src="./docs/checklists/write_project_documentation.png" width="500">
+
+**Design Application UX/UI Design Checklist**
+
+<img src="./docs/checklists/design_uxui_design.png" width="500">
