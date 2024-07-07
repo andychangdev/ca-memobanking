@@ -4,7 +4,7 @@
   <a href="#💡-purpose">Purpose</a> •
   <a href="#⚙️-functionality">Functionality</a> •
   <a href="#-target-audience">Target Audience</a> •
-  <a href="#-tech-stack">Target Audience</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
   <a href="#️-application-architecture-design">App Architecture Design</a> •
   <a href="#-dataflow-diagram">Dataflow Diagram</a> •
   <a href="#-project-development-log">Project Development Log</a> •
@@ -49,6 +49,13 @@ By providing a structured way to track and understand emotions, Memobanking aims
 
     People who are active on social media might enjoy the feature that allows them to share their emotional data publicly, adding a personal and reflective aspect to their online presence.
 
+### Personas & User Stories
+<img src="./docs/personas/persona_riley.excalidraw.png" width="800">
+
+<img src="./docs/personas/persona_mum.excalidraw.png" width="800">
+
+<img src="./docs/personas/persona_sadness.excalidraw.png" width="800">
+
 
 
 ## 📚 Tech Stack
@@ -73,7 +80,7 @@ By providing a structured way to track and understand emotions, Memobanking aims
 In this project, I have opted to use a Kanban workflow as my method of planning and tracking the development of my application. Each column represents a different phase of development. Cards flow from one column to the next as they progress towards completion. The workflow involves the following phases: Backlog, To-Do, In-Progress, Review and Completed.
 
 
-**04-07-2024:**
+#### 04-07-2024:
 
 <img src="./docs/kanban/04-07-2024.jpeg">
 
@@ -89,6 +96,14 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 <img src="./docs/checklists/design_uxui_design.png" width="500">
 
-**05-07-2024:**
+#### 05-07-2024:
 
 <img src="./docs/kanban/05-07-2024.jpeg">
+
+**Write Project Documentation Checklist:**
+
+<img src="./docs/checklists/write_project_documentation_v2.png" width="500">
+
+#### 07-07-2024:
+
+<img src="./docs/kanban/07-07-2024.png">
