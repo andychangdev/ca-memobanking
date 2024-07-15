@@ -62,16 +62,21 @@ By providing a structured way to track and understand emotions, Memobanking aims
 
 **Frontend:**
   - **Framework:** React.js
-  - **Libraries:** [Chart.js](https://www.npmjs.com/package/chart.js?activeTab=readme), [Ant Design](https://www.npmjs.com/package/antd)
+  - **Libraries:** [Chart.js](https://www.npmjs.com/package/chart.js?activeTab=readme)
 
 **Backend:**
   - **Framework:** Node.js with Express.js
-  - **Libraries:** [Dotenv](https://www.npmjs.com/package/dotenv), [BcryptJS](https://www.npmjs.com/package/bcryptjsn), [JSON Web Tokens](https://www.npmjs.com/package/jsonwebtoken)
+  - **Libraries:** [Dotenv](https://www.npmjs.com/package/dotenv), [BcryptJS](https://www.npmjs.com/package/bcryptjsn), [JSON Web Tokens](https://www.npmjs.com/package/jsonwebtoken), [Axios](https://www.npmjs.com/package/axios)
   - **Database:** MongoDB
+
+## 🏛️ Application Architecture Design
+
+<img src="./docs/diagrams/app_architecture.excalidraw.png" width="800">
+
 
 ## 📡 Dataflow Diagram
 
-## 🏛️ Application Architecture Design
+<img src="./docs/diagrams/app_dataflow.excalidraw.png" width="800">
 
 ## 🎨 Wireframes
 
@@ -107,3 +112,7 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 #### 07-07-2024:
 
 <img src="./docs/kanban/07-07-2024.png">
+
+#### 15-07-2024:
+
+<img src="./docs/kanban/15-07-2024.jpeg">
