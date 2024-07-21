@@ -57,6 +57,13 @@ By providing a structured way to track and understand emotions, Memobanking aims
 <img src="./docs/personas/persona_sadness.excalidraw.png" width="800">
 
 
+**Revision**
+21-07-2024: 
+
+- As a user, I want to create an account, so I can save my emotion entries and customise my experience on the platform.
+- As a user, I want to log in to my account, so I can access my emotion entries and features.
+
+
 
 ## 📚 Tech Stack
 
@@ -79,6 +86,14 @@ By providing a structured way to track and understand emotions, Memobanking aims
 <img src="./docs/diagrams/app_dataflow.excalidraw.png" width="1280">
 
 ## 🎨 Wireframes
+
+**Brainstorm:**
+
+<img src="./docs/brainstorm.excalidraw.png" width="1280">
+
+**Logo Design:**
+
+<img src="./docs/logo.excalidraw.svg" width="300">
 
 **Sitemap:**
 
