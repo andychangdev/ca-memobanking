@@ -14,7 +14,7 @@
 
 In today's fast-paced, digitalised world, mental health has become more crucial than ever. Young people, in particular, are facing unprecedented levels of stress, anxiety, and depression. The pressures of social media, academic demands, and societal expectations have contributed to a growing mental health crisis among the youth. 
 
-By providing a structured way to track and understand emotions, Memobanking aims to be a proactive platform in addressing these issues. It encourages self-awareness and emotional regulation, key components in maintaining mental health and preventing the escalation of mental illnesses. Whether for personal growth and mental health management, Memobanking offers users valuable tools to navigate and understand one’s emotional landscape.  Through personalised insights and the ability to share experiences, Memobanking not only aids individual users but also fosters a broader conversation about mental health, promoting understanding and support within the community.
+By providing a structured way to track and understand emotions, Memobanking aims to be a proactive platform in addressing these issues. It encourages self-awareness and emotional regulation, key components in maintaining mental health and preventing the escalation of mental illnesses. Whether for personal growth or mental health management, Memobanking offers users valuable tools to navigate and understand one’s emotional landscape.  Through personalised insights and the ability to share experiences, Memobanking not only aids individual users but also fosters a broader conversation about mental health, promoting understanding and support within the community.
 
 ## ⚙️ Functionality
 
@@ -71,14 +71,52 @@ By providing a structured way to track and understand emotions, Memobanking aims
 
 ## 🏛️ Application Architecture Design
 
-<img src="./docs/diagrams/app_architecture.excalidraw.png" width="800">
+<img src="./docs/diagrams/app_architecture.excalidraw.png" width="1280">
 
 
 ## 📡 Dataflow Diagram
 
-<img src="./docs/diagrams/app_dataflow.excalidraw.png" width="800">
+<img src="./docs/diagrams/app_dataflow.excalidraw.png" width="1280">
 
 ## 🎨 Wireframes
+
+**Sitemap:**
+
+<img src="./docs/wireframes/sitemap.excalidraw.png" width="1280">
+
+**Homepage:**
+
+<img src="./docs/wireframes/home_page.excalidraw.png" width="1280">
+
+**Sign Up Page:**
+
+<img src="./docs/wireframes/signup_page.excalidraw.png" width="1280">
+
+**Login Up Page:**
+
+<img src="./docs/wireframes/login_page.excalidraw.png" width="1280">
+
+**External Pages: About/Contact**
+
+<img src="./docs/wireframes/external_pages.excalidraw.png" width="1280">
+
+**User Profile Page:**
+
+<img src="./docs/wireframes/user_profile.excalidraw.png" width="1280">
+
+**Emotion Modal Menu:**
+
+<img src="./docs/wireframes/emotion_modal.excalidraw.png" width="1280">
+
+**Entries Modal Menu:**
+
+<img src="./docs/wireframes/entries_modal.excalidraw.png" width="1280">
+
+**Account Modal Menu:**
+
+<img src="./docs/wireframes/account_modal.excalidraw.png" width="1280">
+
+
 
 ## 📝 Project Development Log
 
@@ -87,7 +125,7 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 #### 04-07-2024:
 
-<img src="./docs/kanban/04-07-2024.jpeg">
+<img src="./docs/kanban/04-07-2024.jpeg" width="1280">
 
 **Generate Project Idea Checklist:**
 
@@ -103,7 +141,7 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 #### 05-07-2024:
 
-<img src="./docs/kanban/05-07-2024.jpeg">
+<img src="./docs/kanban/05-07-2024.jpeg" width="1280">
 
 **Write Project Documentation Checklist:**
 
@@ -111,8 +149,8 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 #### 07-07-2024:
 
-<img src="./docs/kanban/07-07-2024.png">
+<img src="./docs/kanban/07-07-2024.png" width="1280">
 
 #### 15-07-2024:
 
-<img src="./docs/kanban/15-07-2024.jpeg">
+<img src="./docs/kanban/15-07-2024.jpeg" width="1280">
