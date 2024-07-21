@@ -169,3 +169,7 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 #### 15-07-2024:
 
 <img src="./docs/kanban/15-07-2024.jpeg" width="1280">
+
+#### 21-07-2024:
+
+<img src="./docs/kanban/21-07-2024.jpeg" width="1280">
