@@ -3,11 +3,12 @@
 <p align="center">
   <a href="#💡-purpose">Purpose</a> •
   <a href="#⚙️-functionality">Functionality</a> •
-  <a href="#-target-audience">Target Audience</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#️-application-architecture-design">App Architecture Design</a> •
-  <a href="#-dataflow-diagram">Dataflow Diagram</a> •
-  <a href="#-project-development-log">Project Development Log</a> •
+  <a href="#🎯-target-audience">Target Audience</a> •
+  <a href="#📚-tech-stack">Tech Stack</a> •
+  <a href="#️🏛️-application-architecture-design">App Architecture Design</a> •
+  <a href="#📡-dataflow-diagram">Dataflow Diagram</a> •
+  <a href="#🎨-wireframes">Wireframes</a> •
+  <a href="#📝-project-development-log">Project Development Log</a> •
 </p>
 
 ## 🚀 Purpose
