@@ -7,7 +7,6 @@ export function AuthLayout() {
         <main>
         <AuthHeader />
         <Outlet />
-        <Footer />
         </main>
     )
 }

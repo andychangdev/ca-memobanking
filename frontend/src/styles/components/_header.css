@@ -2,7 +2,7 @@ header nav.base-header {
   display: flex;
   background-color: white;
   margin: 2rem 0rem;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 5rem;
   gap: 4rem;
   align-items: center;
