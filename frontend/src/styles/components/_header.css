@@ -1,52 +1,62 @@
-header nav {
+header nav.base-header {
+  display: flex;
+  background-color: white;
+  margin: 2rem 0rem;
+  padding: 1.5rem 2rem;
+  border-radius: 5rem;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+
+  .button {
     display: flex;
-    background-color: #FFFFFF;
-    margin: 2rem 0rem;
-    padding: 1.5rem 2rem;
-    border-radius: 5rem;
-    gap: 4rem;
-    align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
 
     a {
       color: black;
+      padding: 0.8rem 1.2rem;
+      border-radius: 5rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
     }
 
-    .brandmark__container {
-      display: flex;
-      gap: 0.5rem;
-      padding: 0.8rem;
-      align-items: center;
-  
-      p {
-        font-size: 1.5rem;  
-      }
-      
-    }
+    a.button--signup {
+      color: white;
+      background-color: #1e2330;
+      transition: background-color 0.3s ease;
 
-    .button {
-      display: flex;
-      gap: 1rem;
-
-      a {
-        padding: 0.8rem 1.2rem;
-        border-radius: 5rem;
-        transition: background-color 0.3s ease; 
-
-        &:hover {
-          background-color: #f2f2f2;
-        }
-      }
-
-      a.button--signup {
-        color: white;
-        background-color: #1E2330;
-        transition: background-color 0.3s ease; 
-
-        &:hover {
-          background-color: #434750;
-        }
+      &:hover {
+        background-color: #434750;
       }
     }
   }
-  
+}
+
+header nav.auth-header {
+  background-color: white;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.brandmark__container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  align-items: center;
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.brandmark__logo {
+  width: 40px;
+}
+
+.brandmark__text {
+  color:black;
+}
