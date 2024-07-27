@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { BaseLayout, Homepage, About, Contact, PageNotFound } from './pages'
+import { BaseLayout, HomePage, AboutPage, ContactPage, PageNotFound } from './pages'
 
 function App() {
 
@@ -8,9 +8,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<BaseLayout />}>
-            <Route index element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route index element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
