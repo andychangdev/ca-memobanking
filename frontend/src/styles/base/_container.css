@@ -5,7 +5,6 @@
     --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
   
     display: grid;
-    margin-top: 1rem;
     grid-template-rows: auto 1fr auto;
     align-items: start;
     grid-template-columns:
