@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import { BaseHeader, Footer } from "../components";
+import { AuthHeader, Footer } from "../components";
 
 
-export function BaseLayout() {
+export function AuthLayout() {
     return (
         <main>
-        <BaseHeader />
+        <AuthHeader />
         <Outlet />
         <Footer />
         </main>

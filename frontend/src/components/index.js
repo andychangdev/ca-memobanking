@@ -1,2 +1,3 @@
-export * from "./Header"
+export * from "./BaseHeader"
+export * from "./AuthHeader"
 export * from "./Footer"

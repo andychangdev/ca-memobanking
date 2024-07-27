@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/react.svg"
 
-export function Header() {
+export function BaseHeader() {
   return (
     <header className="content-grid">
     <nav className="breakout">
