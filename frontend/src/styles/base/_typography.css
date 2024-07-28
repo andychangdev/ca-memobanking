@@ -1,0 +1,38 @@
+html,
+body,
+#root {
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-regular);
+  color: var(--clr-black);
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+h1 {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+}
+
+h2 {
+    font-family: var(--ff-regular);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-medium);
+    color: var(--clr-black);
+}
+
+p, li, a {
+    font-family: var(--ff-regular);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
+    color: var(--clr-black);
+    text-decoration: none;
+}
