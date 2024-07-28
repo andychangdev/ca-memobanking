@@ -1,8 +1,17 @@
 export function SignUpPage() {
-    return (
-        <section className="content-grid">
-        <h1>Sign Up Page</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi blanditiis quibusdam hic neque. Earum sed itaque nemo, maxime harum maiores aut dignissimos fugiat dolores adipisci fuga sequi similique reprehenderit?</p>
+  return (
+    <section className="content-grid">
+      <div className="signup__content">
+        <h1>Join Memobanking</h1>
+        <p>Sign up for free!</p>
+      </div>
+      <form>
+        <div className="form__user-input">
+          <input placeholder="Email" type="email" />
+          <input placeholder="Password" type="password" />
+        </div>
+        <button className="form__button">Create account</button>
+      </form>
     </section>
-    )
+  );
 }

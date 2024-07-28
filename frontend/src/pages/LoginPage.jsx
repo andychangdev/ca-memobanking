@@ -1,8 +1,17 @@
 export function LoginPage() {
-    return (
-        <section className="content-grid">
-        <h1>Login Page</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi blanditiis quibusdam hic neque. Earum sed itaque nemo, maxime harum maiores aut dignissimos fugiat dolores adipisci fuga sequi similique reprehenderit?</p>
+  return (
+    <section className="content-grid">
+      <div className="login__content">
+        <h1>Welcome Back!</h1>
+        <p>Log in to your Memobank.</p>
+      </div>
+      <form>
+        <div className="form__user-input">
+          <input placeholder="Email or username" type="text" />
+          <input placeholder="Password" type="password" />
+        </div>
+        <button className="form__button">Continue</button>
+      </form>
     </section>
-    )
+  );
 }
