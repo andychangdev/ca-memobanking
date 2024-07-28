@@ -41,22 +41,3 @@ header nav.auth-header {
   padding: 1rem 2rem;
   margin-bottom: 2rem;
 }
-
-.brandmark__container {
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.8rem;
-  align-items: center;
-
-  p {
-    font-size: 1.5rem;
-  }
-}
-
-.brandmark__logo {
-  width: 40px;
-}
-
-.brandmark__text {
-  color:black;
-}

@@ -1,0 +1,38 @@
+
+.brandmark__container--header {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    align-items: center;
+  
+    p {
+      font-size: 1.5rem;
+    }
+
+    .brandmark__logo {
+      width: 40px;
+    }
+    
+    .brandmark__text {
+      color:black;
+    }
+  }
+  
+  .brandmark__container--footer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  
+    p {
+      font-size: 1.5rem;
+    }
+
+    .brandmark__logo {
+      width: 40px;
+    }
+    
+    .brandmark__text {
+      color:white;
+    }
+  }
+  
