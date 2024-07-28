@@ -3,7 +3,7 @@ body,
 #root {
   font-family: var(--ff-regular);
   font-weight: var(--fw-regular);
-  color: var(--clr-black);
+  color: var(--clr-neutral-700);
   line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,21 +19,21 @@ h1 {
   font-family: var(--ff-regular);
   font-size: var(--fs-large);
   font-weight: var(--fw-bold);
-  color: var(--clr-black);
+  color: var(--clr-neutral-700);
 }
 
 h2 {
     font-family: var(--ff-regular);
     font-size: var(--fs-medium);
     font-weight: var(--fw-medium);
-    color: var(--clr-black);
+    color: var(--clr-neutral-700);
 }
 
 p, li, a {
     font-family: var(--ff-regular);
     font-size: var(--fs-regular);
     font-weight: var(--fw-regular);
-    color: var(--clr-black);
+    color: var(--clr-neutral-700);
     text-decoration: none;
 }
 

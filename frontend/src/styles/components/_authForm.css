@@ -1,8 +1,8 @@
 input {
     padding: 1rem;
     border-radius: .5rem;
-    background-color: white;
-    border: 1px solid white;
+    background-color: var(--clr-neutral-100);
+    border: 1px solid var(--clr-neutral-100);
 }
 
 input::placeholder {
@@ -25,16 +25,17 @@ input::placeholder {
 }
 
 .auth-form__button {
-    background-color: black;
+    background-color: var(--clr-neutral-800);
     color: white;
     font: inherit;
     font-weight: var(--fw-medium);
     border: 0;
     padding: 1rem;
     border-radius: .5rem;
+    transition: background-color 0.3s ease;
 }
 
 .auth-form__button:hover,
 .auth-form__button:focus-visible {
-    background-color: #434750;
+    background-color: var(--clr-neutral-600);
 }
