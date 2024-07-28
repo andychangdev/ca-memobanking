@@ -1,0 +1,40 @@
+input {
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: white;
+    border: 1px solid white;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+.auth-form__content {
+    display: grid;
+    gap: 1rem;
+}
+
+.auth-form__content form {
+    display: grid;
+    gap: 1rem;
+}
+
+.auth-form__user-input {
+    display: grid;
+    gap: 1rem;
+}
+
+.auth-form__button {
+    background-color: black;
+    color: white;
+    font: inherit;
+    font-weight: var(--fw-medium);
+    border: 0;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.auth-form__button:hover,
+.auth-form__button:focus-visible {
+    background-color: #434750;
+}

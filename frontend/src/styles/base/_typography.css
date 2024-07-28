@@ -36,3 +36,9 @@ p, li, a {
     color: var(--clr-black);
     text-decoration: none;
 }
+
+input {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-regular);
+}

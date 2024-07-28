@@ -1,17 +1,17 @@
 export function SignUpPage() {
   return (
-    <section className="content-grid">
-      <div className="signup__content">
+    <section className="auth-form content-grid">
+      <div className="auth-form__content">
         <h1>Join Memobanking</h1>
         <p>Sign up for free!</p>
-      </div>
       <form>
-        <div className="form__user-input">
+        <div className="auth-form__user-input">
           <input placeholder="Email" type="email" />
           <input placeholder="Password" type="password" />
         </div>
-        <button className="form__button">Create account</button>
+        <button className="auth-form__button">Create account</button>
       </form>
+      </div>
     </section>
   );
 }
