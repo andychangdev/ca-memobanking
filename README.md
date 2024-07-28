@@ -138,39 +138,63 @@ By providing a structured way to track and understand emotions, Memobanking aims
 
 In this project, I have opted to use a Kanban workflow as my method of planning and tracking the development of my application. Each column represents a different phase of development. Cards flow from one column to the next as they progress towards completion. The workflow involves the following phases: Backlog, To-Do, In-Progress, Review and Completed.
 
+## Part A
 
 #### 04-07-2024:
 
-<img src="./docs/kanban/04-07-2024.jpeg" width="1280">
+<img src="./docs/kanban/part_a/04-07-2024.jpeg" width="1280">
 
 **Generate Project Idea Checklist:**
 
-<img src="./docs/checklists/generate_project_idea.png" width="500">
+<img src="./docs/checklists/part_a/generate_project_idea.png" width="500">
 
 **Write Project Documentation Checklist:**
 
-<img src="./docs/checklists/write_project_documentation.png" width="500">
+<img src="./docs/checklists/part_a/write_project_documentation.png" width="500">
 
 **Design Application UX/UI Design Checklist**
 
-<img src="./docs/checklists/design_uxui_design.png" width="500">
+<img src="./docs/checklists/part_a/design_uxui_design.png" width="500">
 
 #### 05-07-2024:
 
-<img src="./docs/kanban/05-07-2024.jpeg" width="1280">
+<img src="./docs/kanban/part_a/05-07-2024.jpeg" width="1280">
 
 **Write Project Documentation Checklist:**
 
-<img src="./docs/checklists/write_project_documentation_v2.png" width="500">
+<img src="./docs/checklists/part_a/write_project_documentation_v2.png" width="500">
 
 #### 07-07-2024:
 
-<img src="./docs/kanban/07-07-2024.png" width="1280">
+<img src="./docs/kanban/part_a/07-07-2024.png" width="1280">
 
 #### 15-07-2024:
 
-<img src="./docs/kanban/15-07-2024.jpeg" width="1280">
+<img src="./docs/kanban/part_a/15-07-2024.jpeg" width="1280">
 
 #### 21-07-2024:
 
-<img src="./docs/kanban/21-07-2024.jpeg" width="1280">
+<img src="./docs/kanban/part_a/21-07-2024.jpeg" width="1280">
+
+## Part B
+
+#### 26-07-2024:
+
+<img src="./docs/kanban/part_b/26-07-2024.jpeg" width="1280">
+
+**Setup frontend Checklist:**
+
+<img src="./docs/checklists/part_b/setup_frontend.png" width="500">
+
+**Create App Homepage Checklist:**
+
+<img src="./docs/checklists/part_b/create_app_homepage.png" width="500">
+
+#### 27-07-2024:
+
+<img src="./docs/kanban/part_b/27-07-2024.jpeg" width="1280">
+
+#### 28-07-2024:
+
+<img src="./docs/kanban/part_b/28-08-2024.jpeg" width="1280">
+
