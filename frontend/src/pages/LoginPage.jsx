@@ -6,8 +6,11 @@ export function LoginPage() {
           <p>Login to your Memobank.</p>
         <form>
           <div className="auth-form__user-input">
-            <input placeholder="Email or username" type="text" />
-            <input placeholder="Password" type="password" />
+          <label htmlFor="username">Username</label>
+          <input id="username" placeholder="Enter your username" type="text" />
+
+          <label htmlFor="password">Password</label>
+          <input id="password" placeholder="Enter your password" type="password" />
           </div>
           <button className="auth-form__button">Continue</button>
         </form>

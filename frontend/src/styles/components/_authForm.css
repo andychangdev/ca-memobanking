@@ -2,8 +2,13 @@ input {
     padding: 1rem;
     border-radius: .5rem;
     background-color: var(--clr-neutral-100);
-    border: 1px solid var(--clr-neutral-100);
+    border: 1px solid var(--clr-neutral-500);
 }
+
+input:focus {
+    border-color: #007bff; 
+    outline: none; 
+  }
 
 input::placeholder {
     color: grey;
@@ -12,6 +17,8 @@ input::placeholder {
 .auth-form__content {
     display: grid;
     gap: 1rem;
+    font-size: .8rem;
+    font-weight: bold;;
 }
 
 .auth-form__content form {
@@ -21,7 +28,7 @@ input::placeholder {
 
 .auth-form__user-input {
     display: grid;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .auth-form__button {
@@ -32,6 +39,7 @@ input::placeholder {
     border: 0;
     padding: 1rem;
     border-radius: .5rem;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
