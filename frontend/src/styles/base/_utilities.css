@@ -1,8 +1,11 @@
 /* Colors */
 :root {
     /* Colour Palette */
-    --clr-black: #1a1a1a;
-    --clr-white: #f3f3f1;
+    --clr-neutral-800: #000000;
+    --clr-neutral-700: #222222;
+    --clr-neutral-600: #444444;
+    --clr-neutral-500: #cccccc;
+    --clr-neutral-100: #ffffff; 
 
     /* Font Family */
     --ff-regular: "Inter", Helvetica, Arial, sans-serif;
