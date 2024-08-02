@@ -47,5 +47,35 @@ router.post("/signup", async (request, response) => {
 
 });
 
+
+// User Login
+router.post("/login", async (request, response) => {
+
+  try {
+    const { username, password } = request.body;
+
+    const user = await User.findOne({ username: username});
+    if (!user) {
+      return response.status(401).json({ message: "User does not exist" });
+    }
+
+    const isPasswordCorrect = await bcrypt.compare(password, user.password);
+    if (!isPasswordCorrect) {
+      return response.status(401).json({ message: "Incorrect Password"});
+    }
+
+    const token = jwt.sign({ id: user._id }, process.env.JWT_KEY, { expiresIn: "1d", });
+  
+    return response.json({
+      username, token, message: "Login Successful",
+    });
+
+  } catch (error){
+    console.log(error)
+    return response.status(500).json({ message: "Server Error", error: error.message});
+  }
+
+});
+
   
 module.exports = router;
