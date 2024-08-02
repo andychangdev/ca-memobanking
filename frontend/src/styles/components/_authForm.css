@@ -5,7 +5,7 @@ input {
   border: 1px solid var(--clr-neutral-500);
 }
 
-input:focus {
+input:focus-visible {
   border-color: var(--clr-blue);
   outline: none;
 }
@@ -45,6 +45,10 @@ input::placeholder {
   text-align: left;
 }
 
+.auth-form__input--error, .auth-form__input--error:focus-visible {
+  border-color: var(--clr-red);
+}
+
 form .auth-form__error {
   font-size: 0.8rem;
   color: var(--clr-red);
@@ -66,6 +70,16 @@ form .auth-form__error {
 .auth-form__button:hover,
 .auth-form__button:focus-visible {
   background-color: var(--clr-neutral-600);
+}
+
+.auth-form__button--disabled {
+  background-color: var(--clr-neutral-500);
+  cursor: not-allowed;
+}
+
+.auth-form__button--disabled:hover,
+.auth-form__button--disabled:focus-visible {
+  background-color: var(--clr-neutral-500);
 }
 
 .auth-form__redirect {

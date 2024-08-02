@@ -13,7 +13,9 @@ export function SignUpPage() {
   const [firstnameError, setFirstnameError] = useState(null);
   const [lastnameError, setLastnameError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
-
+  
+  const isFormValid = !usernameError && !firstnameError && !lastnameError && !passwordError;
+  const isFormEmpty = !username || !firstname || !lastname || !password;
 
   const handleSignUp = async (event) => {
     event.preventDefault();
@@ -66,23 +68,23 @@ export function SignUpPage() {
         <form className="auth-form" onSubmit={handleSignUp}>
           <div className="auth-form__user-input">
             <label>Username</label>
-            <input placeholder="Choose a unique username" type="text" value={username} onChange={handleUsername} />
+            <input className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Choose a unique username" type="text" value={username} onChange={handleUsername} />
             {usernameError ? <p className="auth-form__error">{usernameError}</p> : null}
 
             <label>Firstname</label>
-            <input placeholder="Enter your first name" type="text" value={firstname} onChange={handleFirstname}/>
+            <input className={`${firstnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your first name" type="text" value={firstname} onChange={handleFirstname}/>
             {firstnameError ? <p className="auth-form__error">{firstnameError}</p> : null}
 
             <label>Lastname</label>
-            <input placeholder="Enter your last name" type="text" value={lastname} onChange={handleLastname}/>
+            <input className={`${lastnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your last name" type="text" value={lastname} onChange={handleLastname}/>
             {lastnameError ? <p className="auth-form__error">{lastnameError}</p> : null}
 
             <label>Password</label>
-            <input placeholder="Create a secure password" type="password" value={password} onChange={handlePassword}/>
+            <input className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Create a secure password" type="password" value={password} onChange={handlePassword}/>
             {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
-          <button type="submit" className="auth-form__button">Create account</button>
+          <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid}>Create account</button>
         </form>
 
         <p className="auth-form__redirect">Already have an account? {" "}
