@@ -138,88 +138,138 @@ By providing a structured way to track and understand emotions, Memobanking aims
 
 In this project, I have opted to use a Kanban workflow as my method of planning and tracking the development of my application. Each column represents a different phase of development. Cards flow from one column to the next as they progress towards completion. The workflow involves the following phases: Backlog, To-Do, In-Progress, Review and Completed.
 
-## Part A
+### Part A
 
-#### 04-07-2024:
+<details>
+<summary>04-07-2024</summary>
 
+**Trello Kanban:**
 <img src="./docs/kanban/part_a/04-07-2024.jpeg" width="1280">
 
-**Generate Project Idea Checklist:**
+**Checklist: Generate Project Idea**
 
 <img src="./docs/checklists/part_a/generate_project_idea.png" width="500">
 
-**Write Project Documentation Checklist:**
+**Checklist: Write Project Documentation**
 
 <img src="./docs/checklists/part_a/write_project_documentation.png" width="500">
 
-**Design Application UX/UI Design Checklist**
+**Checklist: Design Application UX/UI Design**
 
 <img src="./docs/checklists/part_a/design_uxui_design.png" width="500">
+</details>
 
-#### 05-07-2024:
 
+<details>
+<summary>05-07-2024</summary>
+
+**Trello Kanban:**
 <img src="./docs/kanban/part_a/05-07-2024.jpeg" width="1280">
 
-**Write Project Documentation Checklist:**
+**Checklist: Write Project Documentation**
 
 <img src="./docs/checklists/part_a/write_project_documentation_v2.png" width="500">
+</details>
 
-#### 07-07-2024:
 
+<details>
+<summary>07-07-2024</summary>
+
+**Trello Kanban:**
 <img src="./docs/kanban/part_a/07-07-2024.png" width="1280">
+</details>
 
-#### 15-07-2024:
 
+<details>
+<summary>15-07-2024</summary>
+
+**Trello Kanban:**
 <img src="./docs/kanban/part_a/15-07-2024.jpeg" width="1280">
+</details>
 
-#### 21-07-2024:
+<details>
+<summary>21-07-2024</summary>
 
+**Trello Kanban:**
 <img src="./docs/kanban/part_a/21-07-2024.jpeg" width="1280">
+</details>
 
-## Part B
+### Part B
 
-#### 26-07-2024:
+<details>
+<summary>26-07-2024</summary>
 
+**Trello Kanban:**
 <img src="./docs/kanban/part_b/26-07-2024.jpeg" width="1280">
 
-**Setup Frontend Checklist:**
+</details>
+
+
+<details>
+<summary>27-07-2024</summary>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/27-07-2024.jpeg" width="1280">
+
+**Checklist: Setup Frontend**
 
 <img src="./docs/checklists/part_b/setup_frontend.png" width="500">
 
-**Create App Homepage Checklist:**
+**Checklist: Create App Homepage**
 
 <img src="./docs/checklists/part_b/create_app_homepage.png" width="500">
+</details>
 
-#### 27-07-2024:
 
-<img src="./docs/kanban/part_b/27-07-2024.jpeg" width="1280">
+<details>
+<summary>28-07-2024</summary>
 
-#### 28-07-2024:
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/28-07-2024.jpeg" width="1280">
 
-<img src="./docs/kanban/part_b/28-08-2024.jpeg" width="1280">
-
-**Create User Authentication UI Checklist:**
+**Checklist: Create User Authentication UI**
 
 <img src="./docs/checklists/part_b/create_user_authentication_ui.png" width="500">
 
-#### 01-08-2024:
+**Checklist: App Homepage**
 
+<img src="./docs/checklists/part_b/create_app_homepage_v2.png" width="500">
+</details>
+
+
+<details>
+<summary>01-08-2024</summary>
+
+**Trello Kanban:**
 <img src="./docs/kanban/part_b/01-08-2024.jpeg" width="1280">
 
-**Setup Backend Checklist:**
+**Checklist: Setup Backend**
 
 <img src="./docs/checklists/part_b/setup_backend.png" width="500">
 
+**Checklist: Create User Authentication UI**
+
+<img src="./docs/checklists/part_b/create_user_authentication_ui_v2.png" width="500">
+
+**Trello Kanban:**
 <img src="./docs/kanban/part_b/01-08-2024_v2.jpeg" width="1280">
 
-**Create User Authentication Checklist**
+**Checklist: Create User Authentication**
 
 <img src="./docs/checklists/part_b/create_user_authentication.png" width="500">
 
-**Create User Module Checklist**
+**Checklist: Create User Module Checklist**
 
-<img src="./docs/checklists/part_b/create_users_module.png" width="500"> 
+<img src="./docs/checklists/part_b/create_users_module.png" width="500">
 
-#### 02-08-2024:
+</details>
 
+
+<details>
+<summary>02-08-2024</summary>
+
+**Trello Kanban:**
 <img src="./docs/kanban/part_b/02-08-2024.jpeg" width="1280">
+
+</details>
+
