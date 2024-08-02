@@ -67,20 +67,20 @@ export function SignUpPage() {
 
         <form className="auth-form" onSubmit={handleSignUp}>
           <div className="auth-form__user-input">
-            <label>Username</label>
-            <input className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Choose a unique username" type="text" value={username} onChange={handleUsername} />
+            <label htmlFor="username">Username</label>
+            <input id="username" className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Choose a unique username" type="text" value={username} onChange={handleUsername} />
             {usernameError ? <p className="auth-form__error">{usernameError}</p> : null}
 
-            <label>Firstname</label>
-            <input className={`${firstnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your first name" type="text" value={firstname} onChange={handleFirstname}/>
+            <label htmlFor="firstname">Firstname</label>
+            <input id="firstname" className={`${firstnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your first name" type="text" value={firstname} onChange={handleFirstname}/>
             {firstnameError ? <p className="auth-form__error">{firstnameError}</p> : null}
 
-            <label>Lastname</label>
-            <input className={`${lastnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your last name" type="text" value={lastname} onChange={handleLastname}/>
+            <label htmlFor="lastname">Lastname</label>
+            <input id="lastname" className={`${lastnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your last name" type="text" value={lastname} onChange={handleLastname}/>
             {lastnameError ? <p className="auth-form__error">{lastnameError}</p> : null}
 
-            <label>Password</label>
-            <input className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Create a secure password" type="password" value={password} onChange={handlePassword}/>
+            <label htmlFor="password">Password</label>
+            <input id="password" className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Create a secure password" type="password" value={password} onChange={handlePassword}/>
             {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
