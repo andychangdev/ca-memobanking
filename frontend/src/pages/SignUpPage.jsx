@@ -23,40 +23,29 @@ export function SignUpPage() {
   }
 
 
-  const handleUsername = (event) => {
-    const userInput = event.target.value;
-    setUsername(userInput);
-  
-    const validationError = validateUsername(userInput);
-    setUsernameError(validationError);
-    };
-
-
-  const handleFirstname = (event) => {
-    const userInput = event.target.value;
-    setFirstname(userInput);
-  
-    const validationError = validateGivenName(userInput, "Firstname");
-    setFirstnameError(validationError);
-    };
-
-
-  const handleLastname = (event) => {
-    const userInput = event.target.value;
-    setLastname(userInput);
-  
-    const validationError = validateGivenName(userInput, "Lastname");
-    setLastnameError(validationError);
-    };
-
-
-  const handlePassword = (event) => {
-    const userInput = event.target.value;
-    setPassword(userInput);
-  
-    const validationError = validatePassword(userInput);
-    setPasswordError(validationError);
-    };
+  const handleInputChange = (event) => {
+    const { id, value } = event.target;
+    switch (id) {
+      case "username":
+        setUsername(value);
+        setUsernameError(validateUsername(value));
+        break;
+      case "firstname":
+        setFirstname(value);
+        setFirstnameError(validateGivenName(value, "Firstname"));
+        break;
+      case "lastname":
+        setLastname(value);
+        setLastnameError(validateGivenName(value, "Lastname"));
+        break;
+      case "password":
+        setPassword(value);
+        setPasswordError(validatePassword(value));
+        break;
+      default:
+        break;
+    }
+  };
 
 
   return (
@@ -68,19 +57,19 @@ export function SignUpPage() {
         <form className="auth-form" onSubmit={handleSignUp}>
           <div className="auth-form__user-input">
             <label htmlFor="username">Username</label>
-            <input id="username" className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Choose a unique username" type="text" value={username} onChange={handleUsername} />
+            <input id="username" className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Choose a unique username" type="text" value={username} onChange={handleInputChange} />
             {usernameError ? <p className="auth-form__error">{usernameError}</p> : null}
 
             <label htmlFor="firstname">Firstname</label>
-            <input id="firstname" className={`${firstnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your first name" type="text" value={firstname} onChange={handleFirstname}/>
+            <input id="firstname" className={`${firstnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your first name" type="text" value={firstname} onChange={handleInputChange}/>
             {firstnameError ? <p className="auth-form__error">{firstnameError}</p> : null}
 
             <label htmlFor="lastname">Lastname</label>
-            <input id="lastname" className={`${lastnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your last name" type="text" value={lastname} onChange={handleLastname}/>
+            <input id="lastname" className={`${lastnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your last name" type="text" value={lastname} onChange={handleInputChange}/>
             {lastnameError ? <p className="auth-form__error">{lastnameError}</p> : null}
 
             <label htmlFor="password">Password</label>
-            <input id="password" className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Create a secure password" type="password" value={password} onChange={handlePassword}/>
+            <input id="password" className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Create a secure password" type="password" value={password} onChange={handleInputChange}/>
             {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
