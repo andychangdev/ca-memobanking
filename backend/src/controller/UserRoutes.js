@@ -6,6 +6,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const User = require("../models/UserModel.js")
+const { validateFields } = require("../utilities/helperFunctions.js");
+
 
 const router = express.Router();
 
@@ -15,6 +17,11 @@ router.post("/signup", async (request, response) => {
 
   try {
     const { username, firstname, lastname, password } = request.body;
+
+    const validationError = validateFields({ username, firstname, lastname, password });
+    if (validationError) {
+      return response.status(validationError.status).json({ message: validationError.message });
+    }
 
     const isExistingUser = await User.findOne({ username: username });
     if (isExistingUser) {
@@ -53,6 +60,11 @@ router.post("/login", async (request, response) => {
 
   try {
     const { username, password } = request.body;
+
+    const validationError = validateFields({ username, password });
+    if (validationError) {
+      return response.status(validationError.status).json({ message: validationError.message });
+    }
 
     const user = await User.findOne({ username: username});
     if (!user) {
