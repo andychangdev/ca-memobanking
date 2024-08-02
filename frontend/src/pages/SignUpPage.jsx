@@ -1,27 +1,45 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export function SignUpPage() {
+
+  
+  const [username, setUsername] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [password, setPassword] = useState("");
+
+
+  const handleSignUp = async (event) => {
+    event.preventDefault();
+
+  }
+
+
   return (
     <section className="auth-page content-grid">
       <div className="auth-page__content">
         <h1>Join Memobanking</h1>
         <p>Sign up for free!</p>
-        <form className="auth-form">
+
+        <form className="auth-form" onSubmit={handleSignUp}>
           <div className="auth-form__user-input">
-            <label htmlFor="username">Username</label>
-            <input id="username" placeholder="Choose a unique username" type="text" />
+            <label>Username</label>
+            <input placeholder="Choose a unique username" type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
 
-            <label htmlFor="firstname">Firstname</label>
-            <input id="firstname" placeholder="Enter your first name" type="text" />
+            <label>Firstname</label>
+            <input placeholder="Enter your first name" type="text" value={firstname} onChange= {(event) => setFirstname(event.target.value)}/>
 
-            <label htmlFor="lastname">Lastname</label>
-            <input id="lastname" placeholder="Enter your last name" type="text" />
+            <label>Lastname</label>
+            <input placeholder="Enter your last name" type="text" value={lastname} onChange= {(event) => setLastname(event.target.value)}/>
 
-            <label htmlFor="password">Password</label>
-            <input id="password" placeholder="Create a secure password" type="password" />
+            <label>Password</label>
+            <input placeholder="Create a secure password" type="password" value={password} onChange= {(event) => setPassword(event.target.value)}/>
           </div>
-          <button className="auth-form__button">Create account</button>
+
+          <button type="submit" className="auth-form__button">Create account</button>
         </form>
+
         <p className="auth-form__redirect">Already have an account? {" "}
             <Link to="/login"> Log In</Link>
         </p>
