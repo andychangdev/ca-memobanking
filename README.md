@@ -182,7 +182,7 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 <img src="./docs/kanban/part_b/26-07-2024.jpeg" width="1280">
 
-**Setup frontend Checklist:**
+**Setup Frontend Checklist:**
 
 <img src="./docs/checklists/part_b/setup_frontend.png" width="500">
 
@@ -198,3 +198,28 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 <img src="./docs/kanban/part_b/28-08-2024.jpeg" width="1280">
 
+**Create User Authentication UI Checklist:**
+
+<img src="./docs/checklists/part_b/create_user_authentication_ui.png" width="500">
+
+#### 01-08-2024:
+
+<img src="./docs/kanban/part_b/01-08-2024.jpeg" width="1280">
+
+**Setup Backend Checklist:**
+
+<img src="./docs/checklists/part_b/setup_backend.png" width="500">
+
+<img src="./docs/kanban/part_b/01-08-2024_v2.jpeg" width="1280">
+
+**Create User Authentication Checklist**
+
+<img src="./docs/checklists/part_b/create_user_authentication.png" width="500">
+
+**Create User Module Checklist**
+
+<img src="./docs/checklists/part_b/create_users_module.png" width="500"> 
+
+#### 02-08-2024:
+
+<img src="./docs/kanban/part_b/02-08-2024.jpeg" width="1280">
