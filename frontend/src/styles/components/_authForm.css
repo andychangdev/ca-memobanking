@@ -6,7 +6,7 @@ input {
 }
 
 input:focus {
-  border-color: #007bff;
+  border-color: var(--clr-blue);
   outline: none;
 }
 
@@ -43,6 +43,12 @@ input::placeholder {
   font-size: 0.8rem;
   font-weight: bold;
   text-align: left;
+}
+
+form .auth-form__error {
+  font-size: 0.8rem;
+  color: var(--clr-red);
+  text-align: start;
 }
 
 .auth-form__button {

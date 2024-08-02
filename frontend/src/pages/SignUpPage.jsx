@@ -67,19 +67,19 @@ export function SignUpPage() {
           <div className="auth-form__user-input">
             <label>Username</label>
             <input placeholder="Choose a unique username" type="text" value={username} onChange={handleUsername} />
-            {usernameError ? <p>{usernameError}</p> : null}
+            {usernameError ? <p className="auth-form__error">{usernameError}</p> : null}
 
             <label>Firstname</label>
             <input placeholder="Enter your first name" type="text" value={firstname} onChange={handleFirstname}/>
-            {firstnameError ? <p>{firstnameError}</p> : null}
+            {firstnameError ? <p className="auth-form__error">{firstnameError}</p> : null}
 
             <label>Lastname</label>
             <input placeholder="Enter your last name" type="text" value={lastname} onChange={handleLastname}/>
-            {lastnameError ? <p>{lastnameError}</p> : null}
+            {lastnameError ? <p className="auth-form__error">{lastnameError}</p> : null}
 
             <label>Password</label>
             <input placeholder="Create a secure password" type="password" value={password} onChange={handlePassword}/>
-            {passwordError ? <p>{passwordError}</p> : null}
+            {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
           <button type="submit" className="auth-form__button">Create account</button>
