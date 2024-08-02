@@ -7,6 +7,12 @@
     --clr-neutral-500: #cccccc;
     --clr-neutral-100: #ffffff; 
 
+    --clr-red: #fa5252;
+    --clr-blue: #228be6;
+    --clr-yellow: #fab005;
+    --clr-green: #40c057;
+    --clr-purple: #7950f2;
+
     /* Font Family */
     --ff-regular: "Inter", Helvetica, Arial, sans-serif;
 
