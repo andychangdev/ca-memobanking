@@ -79,8 +79,8 @@ export function LoginPage() {
             {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
-          {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
           <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Continue</button>
+          {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
 
         </form>
         <p className="auth-form__redirect">Not registered yet? {" "}
