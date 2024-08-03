@@ -73,7 +73,7 @@ export function SignUpPage() {
             {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
-          <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid}>Create account</button>
+          <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Create account</button>
         </form>
 
         <p className="auth-form__redirect">Already have an account? {" "}
