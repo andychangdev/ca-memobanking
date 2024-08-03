@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { validateUsername, validateGivenName, validatePassword } from "../utilities/inputValidationHelper";
+import api from "../utilities/apiClient";
 
 
 export function SignUpPage() {
@@ -13,13 +14,35 @@ export function SignUpPage() {
   const [firstnameError, setFirstnameError] = useState(null);
   const [lastnameError, setLastnameError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
-  
+  const [formSubmitError, setFormSubmitError] = useState(null);
+  const navigate = useNavigate();
+
   const isFormValid = !usernameError && !firstnameError && !lastnameError && !passwordError;
   const isFormEmpty = !username || !firstname || !lastname || !password;
+
 
   const handleSignUp = async (event) => {
     event.preventDefault();
 
+    try {
+      const response = await api.post("/users/signup", {
+        username: username,
+        firstname: firstname,
+        lastname: lastname,
+        password: password,
+      })
+
+      if (response.data && response.data.token) {
+        localStorage.setItem("token", response.data.token);
+        navigate("/about")
+      }
+    } catch (error) {
+      if(error.response && error.response.data && error.response.data.message) {
+        setFormSubmitError(error.response.data.message);
+      } else {
+        setFormSubmitError("An unexpected error occurred. Please try again")
+      }
+    }
   }
 
 
@@ -74,6 +97,7 @@ export function SignUpPage() {
           </div>
 
           <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Create account</button>
+          {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
         </form>
 
         <p className="auth-form__redirect">Already have an account? {" "}
