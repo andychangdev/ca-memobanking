@@ -14,6 +14,7 @@ export function SignUpPage() {
   const [firstnameError, setFirstnameError] = useState(null);
   const [lastnameError, setLastnameError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
+  const [formSubmitError, setFormSubmitError] = useState(null);
   const navigate = useNavigate();
 
   const isFormValid = !usernameError && !firstnameError && !lastnameError && !passwordError;
@@ -35,8 +36,12 @@ export function SignUpPage() {
         localStorage.setItem("token", response.data.token);
         navigate("/about")
       }
-    } catch {
-      
+    } catch (error) {
+      if(error.response && error.response.data && error.response.data.message) {
+        setFormSubmitError(error.response.data.message);
+      } else {
+        setFormSubmitError("An unexpected error occurred. Please try again")
+      }
     }
   }
 
@@ -91,6 +96,7 @@ export function SignUpPage() {
             {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
+          {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
           <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Create account</button>
         </form>
 
