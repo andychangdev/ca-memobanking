@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import api from "../utilities/apiClient";
 
 export function LoginPage() {
 
@@ -7,6 +8,8 @@ export function LoginPage() {
   const [password, setPassword] = useState("");
   const [usernameError, setUsernameError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
+  const [formSubmitError, setFormSubmitError] = useState(null);
+  const navigate = useNavigate();
 
   const isFormValid = !usernameError && !passwordError;
   const isFormEmpty = !username || !password;
@@ -15,6 +18,23 @@ export function LoginPage() {
   const handleLogin = async (event) => {
     event.preventDefault();
 
+    try {
+      const response = await api.post("/users/login", {
+        username: username,
+        password: password,
+      })
+
+      if (response.data && response.data.token) {
+        localStorage.setItem("token", response.data.token);
+        navigate("/")
+      }
+    } catch (error) {
+      if(error.response && error.response.data && error.response.data.message) {
+        setFormSubmitError(error.response.data.message);
+      } else {
+        setFormSubmitError("An unexpected error occurred. Please try again")
+      }
+    }
   }
 
 
@@ -59,6 +79,7 @@ export function LoginPage() {
             {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
           </div>
 
+          {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
           <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Continue</button>
 
         </form>
