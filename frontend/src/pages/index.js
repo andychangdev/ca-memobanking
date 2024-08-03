@@ -1,5 +1,3 @@
-export * from "./_BaseLayout"
-export * from "./_AuthLayout"
 export * from "./HomePage"
 export * from "./AboutPage"
 export * from "./ContactPage"

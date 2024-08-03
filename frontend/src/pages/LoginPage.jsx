@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { AuthHeader } from "../components";
 import api from "../utilities/apiClient";
 
 export function LoginPage() {
@@ -64,29 +65,29 @@ export function LoginPage() {
   
 
   return (
-    <section className="auth-page content-grid">
-      <div className="auth-page__content">
-        <h1>Welcome Back!</h1>
-        <p>Login to your Memobank.</p>
-        <form className="auth-form" onSubmit={handleLogin}>
-          <div className="auth-form__user-input">
-            <label htmlFor="username">Username</label>
-            <input id="username" className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Enter your username" type="text" value={username} onChange={handleInputChange}/>
-            {usernameError ? <p className="auth-form__error">{usernameError}</p> : null}
-
-            <label htmlFor="password">Password</label>
-            <input id="password" className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Enter your password" type="password" value={password} onChange={handleInputChange}/>
-            {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
-          </div>
-
-          <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Continue</button>
-          {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
-
-        </form>
-        <p className="auth-form__redirect">Not registered yet? {" "}
-          <Link to="/signup"> Create an account</Link>
-        </p>
-      </div>
-    </section>
+    <main>
+      <AuthHeader/>
+      <section className="auth-page content-grid">
+        <div className="auth-page__content">
+          <h1>Welcome Back!</h1>
+          <p>Login to your Memobank.</p>
+          <form className="auth-form" onSubmit={handleLogin}>
+            <div className="auth-form__user-input">
+              <label htmlFor="username">Username</label>
+              <input id="username" className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Enter your username" type="text" value={username} onChange={handleInputChange}/>
+              {usernameError ? <p className="auth-form__error">{usernameError}</p> : null}
+              <label htmlFor="password">Password</label>
+              <input id="password" className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Enter your password" type="password" value={password} onChange={handleInputChange}/>
+              {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
+            </div>
+            <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Continue</button>
+            {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
+          </form>
+          <p className="auth-form__redirect">Not registered yet? {" "}
+            <Link to="/signup"> Create an account</Link>
+          </p>
+        </div>
+      </section>
+    </main>
   );
 }
