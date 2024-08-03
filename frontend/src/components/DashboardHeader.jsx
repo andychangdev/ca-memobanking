@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "/logo.svg";
+import { MdLogout } from "react-icons/md"
 
 export function DashboardHeader() {
   return (
@@ -12,7 +13,10 @@ export function DashboardHeader() {
               <p className="brandmark__text">Memobanking</p>
             </NavLink>
           </div>
-          <p>Text</p>
+          <button className="dashboard-nav__logout-btn">
+          <MdLogout className="dashboard-nav__logout-icon"/>
+          </button>
+
         </div>
         
       </nav>

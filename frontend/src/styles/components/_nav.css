@@ -61,6 +61,27 @@
   align-items: center;
 }
 
+.dashboard-nav__logout-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-nav__logout-icon {
+  font-size: 30px;
+  color: var(--clr-neutral-700);
+}
+
+.dashboard-nav__logout-icon:hover {
+  color: var(--clr-neutral-600);
+}
+
 .dashboard-nav.content-grid {
     --padding-inline: 2rem;
     --content-max-width:  200rem;
