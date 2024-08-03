@@ -4,7 +4,7 @@ import logo from "/logo.svg"
 export function BaseHeader() {
   return (
     <header className="content-grid">
-      <nav className="base-header breakout">
+      <nav className="base-nav breakout">
         <div class="brandmark">
           <NavLink to={"/"} className="brandmark__container--header">
             <img src={logo} className="brandmark__logo" alt="Memobanking Logo" />

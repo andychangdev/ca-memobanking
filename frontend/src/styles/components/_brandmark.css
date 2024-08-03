@@ -2,7 +2,6 @@
 .brandmark__container--header {
     display: flex;
     gap: 0.5rem;
-    padding: 0.8rem;
     align-items: center;
   
     p {
