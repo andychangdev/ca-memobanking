@@ -1,6 +1,7 @@
 export * from "./HomePage"
 export * from "./AboutPage"
 export * from "./ContactPage"
+export * from "./Dashboard"
 export * from "./LoginPage"
 export * from "./SignUpPage"
 export * from "./PageNotFound"
