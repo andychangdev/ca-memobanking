@@ -4,7 +4,7 @@ import logo from "/logo.svg";
 export function AuthHeader() {
   return (
     <header>
-      <nav className="auth-header">
+      <nav className="auth-nav content-grid">
         <div class="brandmark">
           <NavLink to={"/"} className="brandmark__container--header">
             <img src={logo} className="brandmark__logo" alt="Memobanking Logo"/>

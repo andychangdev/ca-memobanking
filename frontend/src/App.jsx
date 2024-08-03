@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { HomePage, AboutPage, ContactPage, PageNotFound, SignUpPage, LoginPage } from './pages'
+import { HomePage, AboutPage, ContactPage, PageNotFound, SignUpPage, LoginPage, Dashboard } from './pages'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/signup" element={<SignUpPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
