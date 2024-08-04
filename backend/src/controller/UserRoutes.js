@@ -7,6 +7,7 @@ dotenv.config();
 
 const User = require("../models/UserModel.js")
 const { validateFields } = require("../utilities/helperFunctions.js");
+const { verifyToken } = require("../utilities/verifyToken.js");
 
 
 const router = express.Router();
@@ -89,5 +90,30 @@ router.post("/login", async (request, response) => {
 
 });
 
+
+// User data
+router.get("/data", verifyToken, async (request, response) => {
+  try {
+    const userId = request.user.id;
+
+    const userData = await User.findOne({ _id: userId });
+
+    if (!userData) {
+      return response.sendStatus(401);
+    }
+
+    return response.json({
+      user: {
+        username: userData.username,
+        firstname: userData.firstname,
+        lastname: userData.lastname,
+      },
+      message: "User data retrieved successfully",
+    });
+  } catch (error) {
+    console.log(error);
+    return response.status(500).json({ message: "Server Error", error: error.message });
+  }
+});
   
 module.exports = router;
