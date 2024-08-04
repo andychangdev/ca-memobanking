@@ -1,8 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "/logo.svg";
 import { MdLogout } from "react-icons/md"
 
 export function DashboardHeader() {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.clear()
+    navigate("/");
+  }
+
   return (
     <header>
       <nav className="dashboard-nav content-grid">
@@ -13,7 +21,7 @@ export function DashboardHeader() {
               <p className="brandmark__text">Memobanking</p>
             </NavLink>
           </div>
-          <button className="dashboard-nav__logout-btn">
+          <button className="dashboard-nav__logout-btn" onClick={handleLogout}>
           <MdLogout className="dashboard-nav__logout-icon"/>
           </button>
 
