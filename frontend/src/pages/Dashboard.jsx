@@ -30,7 +30,21 @@ export function Dashboard() {
       getUserData()
       return () => {}
     }, []);
-    
+
+    if (!userData) {
+        return (
+            <main>
+                <DashboardHeader/>
+                <section className="dashboard content-grid">
+                    <div className="dashboard__container">
+                        <div className="dashboard__content">
+                            <h1>Loading...</h1>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        );
+    }    
 
     return (
         <main>
@@ -38,7 +52,7 @@ export function Dashboard() {
             <section className="dashboard content-grid">
                 <div className="dashboard__container">
                     <div className="dashboard__content">
-                        <h1>Welcome {userData.username}</h1>
+                        <h1>Hi {userData.username}</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi blanditiis quibusdam hic neque. Earum sed itaque nemo, maxime harum maiores dignissimos fugiat dolores adipisci fuga sequi similique reprehenderit?</p>
                     </div>
                     <div className="dashboard__content">
