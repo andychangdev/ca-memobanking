@@ -27,7 +27,7 @@ export function LoginPage() {
 
       if (response.data && response.data.token) {
         localStorage.setItem("token", response.data.token);
-        navigate("/")
+        navigate("/dashboard")
       }
     } catch (error) {
       if(error.response && error.response.data && error.response.data.message) {

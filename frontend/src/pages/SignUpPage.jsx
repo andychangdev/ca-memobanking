@@ -35,7 +35,7 @@ export function SignUpPage() {
 
       if (response.data && response.data.token) {
         localStorage.setItem("token", response.data.token);
-        navigate("/about")
+        navigate("/dashboard")
       }
     } catch (error) {
       if(error.response && error.response.data && error.response.data.message) {
