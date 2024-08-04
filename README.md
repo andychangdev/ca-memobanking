@@ -4,11 +4,12 @@
   <a href="#💡-purpose">Purpose</a> •
   <a href="#⚙️-functionality">Functionality</a> •
   <a href="#🎯-target-audience">Target Audience</a> •
-  <a href="#📚-tech-stack">Tech Stack</a> •
   <a href="#️🏛️-application-architecture-design">App Architecture Design</a> •
   <a href="#📡-dataflow-diagram">Dataflow Diagram</a> •
   <a href="#🎨-wireframes">Wireframes</a> •
+  <a href="#📚-tech-stack">Tech Stack</a> •
   <a href="#📝-project-development-log">Project Development Log</a> •
+  <a href="#💎-application-testing">Application Testing</a> •
 </p>
 
 ## 🚀 Purpose
@@ -66,32 +67,6 @@ By providing a structured way to track and understand emotions, Memobanking aims
 
 
 
-## 📚 Tech Stack
-
-### **Frontend:**
-
-| Services | Description |
-| ------- | ----------- |
-| [React](https://www.npmjs.com/package/react) | React is a powerful and widely adopted JavaScript library for building user interfaces. In this application, it used to create reusable UI components that can be easily integrated into application, improving efficiency and flexibility throughout the development process. |
-| [React Router DOM](https://www.npmjs.com/package/react-router-dom) |  React Router DOM is flexible routing library for React apps. It allows developers to define routes and manage navigation within the app. In this application, React Router DOM was used to handle page routing, allowing users to navigate seamlessly across different pages within the application without reloading the entire page.
-| [React Icons](https://www.npmjs.com/package/react-icons) | React Icons is a library that provides a collection of customisable icons for use in React applications. In this application, React Icons was used for certain buttons across the user interface to simplify development process |
-| [Axios](https://www.npmjs.com/package/axios) | Axios is a promise-based HTTP client for making requests to remote servers. In this application, Axios was used to perform HTTP requests to fetch and send data between the frontend and backend API. |
-| [Chart.js](https://www.npmjs.com/package/chart.js?activeTab=readme) | Text Here|
-
-
-
-### **Backend:**
-
-| Services | Description |
-| ------- | ----------- |
-| [Node.js](https://www.npmjs.com/package/node) | Node.js is runtime environment for executing sever-side code and manage operations using JavaScript outside the browser. In this application, Node.js was used to write server-side logic, scripts, and install a wide range of libraries through npm, improving efficiency and flexibility throughout the development process.cumbersome compared to traditional backend technologies.|
-| [Express.js](https://www.npmjs.com/package/express) | Express.js is a web application framework for Node.js that simplifies the process of building RESTful API services. In this application, Express.js was used to set up the server, define route handlers, manage routing, and handle middleware. |
-| [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) | MongoDB Atlas is a database service that provides a scalable and cloud-based MongoDB database. It allows developers to create applications that can store, query and manage data in a non-relational (noSQL) format. In this application,  MongoDB Atlas was used to handle large volumes of data, performing operations such as create, read, update, and delete (CRUD) on NoSQL documents. It is connected to Mongoose in the application's backend to enable efficient interaction with the MongoDB Atlas database.|
-| [Mongoose](https://www.npmjs.com/package/mongoose) | Mongoose is an Object Data Modeling (ODM) tool designed to interact with MongoDB databases using Javascript. It simplifies data validation, querying, and relationships between data models without the need to write raw NoSQL queries. In this application, Mongoose was used to define schemas and models to structure and manage data in MongoDB. Furthermore, Mongoose queries were used to within the application's routes to query for user and emotion documents and create CRUD operations.
-| [Dotenv](https://www.npmjs.com/package/dotenv) | Dotenv provides a way to manage environment variables in a Node.js application. This library allows developers to keep sensitive data, such as JWT keys and database credentials, secure and organised. In this application, Dotenv was used to load environment variables for connecting to the MongoDB database and for creating and verifying JWT tokens, ensuring that sensitive information was not exposed in the codebase.
-| [Cors](https://www.npmjs.com/package/cors) | CORS is a security feature implemented in web browsers to control cross-origin requests which help prevent unauthorised access to resources. In this application, CORS was configured to allow cross-origin requests from anywhere without restrictions. While this approach is less secure, it allowed me to focus on the application's development and functionality without being constrained by cross-origin issues.|
-| [JSON Web Tokens](https://www.npmjs.com/package/jsonwebtoken) | JSON Web Tokens allows developers to add JSON Web Token (JWT) based authentication and authorisation to their application. JWT based authentication means it follows the RFC 7519 standard, which is an internet standard that defines a secure method for transmitting data between a client and a server using JSON format tokens. In this application, JWTs are used to authorize users during login and authenticate them before performing certain CRUD operations.
-| [BcryptJS](https://www.npmjs.com/package/bcryptjsn) | BcryptJS allows developers to use Bcrypt hashing algorithm to securely store passwords in their database. Bcrypt is a popular cryptographic algorithm designed to hash passwords by converting them into a string of characters that are highly resistant to various password-cracking techniques, such as brute force, rainbow table, and dictionary attacks. It is available in many programming languages and frameworks. In this application, the Javascript version of Bcrypt was used to hash the user's password during registration. This makes the application more secure and protected against unauthorised access to user accounts. |
 
 
 ## 🏛️ Application Architecture Design
@@ -149,6 +124,32 @@ By providing a structured way to track and understand emotions, Memobanking aims
 
 <img src="./docs/wireframes/account_modal.excalidraw.png" width="1280">
 
+## 📚 Tech Stack
+
+### **Frontend:**
+
+| Services | Description |
+| ------- | ----------- |
+| [React](https://www.npmjs.com/package/react) | React is a powerful and widely adopted JavaScript library for building user interfaces. In this application, it used to create reusable UI components that can be easily integrated into application, improving efficiency and flexibility throughout the development process. |
+| [React Router DOM](https://www.npmjs.com/package/react-router-dom) |  React Router DOM is flexible routing library for React apps. It allows developers to define routes and manage navigation within the app. In this application, React Router DOM was used to handle page routing, allowing users to navigate seamlessly across different pages within the application without reloading the entire page.
+| [React Icons](https://www.npmjs.com/package/react-icons) | React Icons is a library that provides a collection of customisable icons for use in React applications. In this application, React Icons was used for certain buttons across the user interface to simplify development process |
+| [Axios](https://www.npmjs.com/package/axios) | Axios is a promise-based HTTP client for making requests to remote servers. In this application, Axios was used to perform HTTP requests to fetch and send data between the frontend and backend API. |
+| [Chart.js](https://www.npmjs.com/package/chart.js?activeTab=readme) | Text Here|
+
+
+
+### **Backend:**
+
+| Services | Description |
+| ------- | ----------- |
+| [Node.js](https://www.npmjs.com/package/node) | Node.js is runtime environment for executing sever-side code and manage operations using JavaScript outside the browser. In this application, Node.js was used to write server-side logic, scripts, and install a wide range of libraries through npm, improving efficiency and flexibility throughout the development process.cumbersome compared to traditional backend technologies.|
+| [Express.js](https://www.npmjs.com/package/express) | Express.js is a web application framework for Node.js that simplifies the process of building RESTful API services. In this application, Express.js was used to set up the server, define route handlers, manage routing, and handle middleware. |
+| [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) | MongoDB Atlas is a database service that provides a scalable and cloud-based MongoDB database. It allows developers to create applications that can store, query and manage data in a non-relational (noSQL) format. In this application,  MongoDB Atlas was used to handle large volumes of data, performing operations such as create, read, update, and delete (CRUD) on NoSQL documents. It is connected to Mongoose in the application's backend to enable efficient interaction with the MongoDB Atlas database.|
+| [Mongoose](https://www.npmjs.com/package/mongoose) | Mongoose is an Object Data Modeling (ODM) tool designed to interact with MongoDB databases using Javascript. It simplifies data validation, querying, and relationships between data models without the need to write raw NoSQL queries. In this application, Mongoose was used to define schemas and models to structure and manage data in MongoDB. Furthermore, Mongoose queries were used to within the application's routes to query for user and emotion documents and create CRUD operations.
+| [Dotenv](https://www.npmjs.com/package/dotenv) | Dotenv provides a way to manage environment variables in a Node.js application. This library allows developers to keep sensitive data, such as JWT keys and database credentials, secure and organised. In this application, Dotenv was used to load environment variables for connecting to the MongoDB database and for creating and verifying JWT tokens, ensuring that sensitive information was not exposed in the codebase.
+| [Cors](https://www.npmjs.com/package/cors) | CORS is a security feature implemented in web browsers to control cross-origin requests which help prevent unauthorised access to resources. In this application, CORS was configured to allow cross-origin requests from anywhere without restrictions. While this approach is less secure, it allowed me to focus on the application's development and functionality without being constrained by cross-origin issues.|
+| [JSON Web Tokens](https://www.npmjs.com/package/jsonwebtoken) | JSON Web Tokens allows developers to add JSON Web Token (JWT) based authentication and authorisation to their application. JWT based authentication means it follows the RFC 7519 standard, which is an internet standard that defines a secure method for transmitting data between a client and a server using JSON format tokens. In this application, JWTs are used to authorize users during login and authenticate them before performing certain CRUD operations.
+| [BcryptJS](https://www.npmjs.com/package/bcryptjsn) | BcryptJS allows developers to use Bcrypt hashing algorithm to securely store passwords in their database. Bcrypt is a popular cryptographic algorithm designed to hash passwords by converting them into a string of characters that are highly resistant to various password-cracking techniques, such as brute force, rainbow table, and dictionary attacks. It is available in many programming languages and frameworks. In this application, the Javascript version of Bcrypt was used to hash the user's password during registration. This makes the application more secure and protected against unauthorised access to user accounts. |
 
 
 ## 📝 Project Development Log
@@ -290,3 +291,14 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 </details>
 
+## 💎 Application Testing
+
+### Development Testing
+
+**DevTest.04-08-2024**
+<img src="./docs//application_testing/DevTest_04-08-2024.png" width="1280">
+
+### Production Testing
+
+**ProdTest.04-08-2024**
+<img src="./docs/application_testing/ProdTest_04-08-2024.png" width="1280">
