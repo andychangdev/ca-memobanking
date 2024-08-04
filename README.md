@@ -12,6 +12,16 @@
   <a href="#💎-application-testing">Application Testing</a> •
 </p>
 
+## 📍 Links
+
+
+<h3 align="center"><a href="">🌐 Live Website</a>
+</h3>
+
+<h3 align="center"><a href="https://github.com/andychangdev/ca-memobanking">📦 Github Repo</a></h3>
+
+ <h3 align="center"><a href="">🎬 Presentation Video</a></h3>
+
 ## 🚀 Purpose
 
 In today's fast-paced, digitalised world, mental health has become more crucial than ever. Young people, in particular, are facing unprecedented levels of stress, anxiety, and depression. The pressures of social media, academic demands, and societal expectations have contributed to a growing mental health crisis among the youth. 
