@@ -3,35 +3,50 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
-  
-    p {
-      font-size: 1.5rem;
-    }
 
     .brandmark__logo {
-      width: 40px;
+      width: 34px;
     }
     
     .brandmark__text {
+      font-size: 1rem;
+      margin: 0;
       color:var(--clr-neutral-800);
     }
   }
-  
-  .brandmark__container--footer {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  
-    p {
-      font-size: 1.5rem;
-    }
 
-    .brandmark__logo {
-      width: 40px;
-    }
-    
-    .brandmark__text {
-      color:var(--clr-neutral-100);
-    }
+  
+.brandmark__container--footer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  
+  .brandmark__logo {
+    width: 40px;
   }
   
+  .brandmark__text {
+    font-size: 1rem;
+    margin: 0;
+    color:var(--clr-neutral-100);
+  }
+}
+  
+  
+  /* Medium Breakpoint */
+  
+@media ( width > 750px ) {
+  .brandmark__container--header {
+    .brandmark__text {
+      font-size: 1.2rem;
+    }
+    .brandmark__logo {
+      width: 44px;
+    }
+  }
+  .brandmark__container--footer {    
+    .brandmark__text {
+      font-size: 1.2rem;
+    }
+  }
+}
