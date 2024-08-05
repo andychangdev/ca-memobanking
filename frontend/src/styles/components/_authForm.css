@@ -25,7 +25,7 @@ input::placeholder {
 }
 
 .auth-page__content p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--clr-neutral-600);
 }
 
@@ -58,8 +58,7 @@ form .auth-form__error {
 .auth-form__button {
   background-color: var(--clr-neutral-800);
   color: white;
-  font: inherit;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   border: 0;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -86,7 +85,7 @@ form .auth-form__error {
   margin-top: 1rem;
 
   a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #007bff;
     text-decoration: underline;
   }

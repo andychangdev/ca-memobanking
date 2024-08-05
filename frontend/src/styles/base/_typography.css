@@ -24,7 +24,7 @@ h1 {
 h2 {
     font-family: var(--ff-regular);
     font-size: var(--fs-medium);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-bold);
     color: var(--clr-neutral-700);
 }
 

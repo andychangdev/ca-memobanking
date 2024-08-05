@@ -4,7 +4,7 @@ import logo from "/logo.svg"
 export function BaseHeader() {
   return (
     <header className="content-grid">
-      <nav className="base-nav breakout">
+      <nav className="base-nav">
         <div class="brandmark">
           <NavLink to={"/"} className="brandmark__container--header">
             <img src={logo} className="brandmark__logo" alt="Memobanking Logo" />
@@ -13,7 +13,7 @@ export function BaseHeader() {
         </div>
       
         <div className="button">
-          <Link to="/login" className="button--login">Login</Link>
+          <Link to="/login" className="button--login">Log In</Link>
           <Link to="/signup" className="button--signup"> Sign Up</Link>
         </div>
       </nav>
