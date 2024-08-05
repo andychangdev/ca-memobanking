@@ -1,5 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
-import logo from "/logo_mono.svg"
+import logo from "/logo.svg"
 
 export function Footer() {
   return (
