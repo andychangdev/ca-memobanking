@@ -69,8 +69,8 @@ export function LoginPage() {
     <main>
       <AuthHeader/>
       <section className="auth-page content-grid">
-        <div className="auth-page__container">
-          <img className="auth-page__image" src={appJoinImg}></img>
+        <div className="grid-container">
+          <img className="grid-container__image" src={appJoinImg}></img>
           <div className="auth-page__content">
             <h1>Welcome Back!</h1>
             <p>Login to your Memobank.</p>
