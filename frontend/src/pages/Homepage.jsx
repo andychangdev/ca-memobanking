@@ -6,7 +6,7 @@ import appBenefitsImg from "../assets/images/app_benefits.svg";
 export function HomePage() {
     return (
         <main>
-            <BaseHeader/>
+            <BaseHeader btnColour="btn-blue"/>
             <section className="homepage content-grid">
                 <div className="hp-hero">
                     <h1 className="hp-hero__title">Discover Your Emotional Landscape </h1>

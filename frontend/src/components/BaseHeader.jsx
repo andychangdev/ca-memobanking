@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import logo from "/logo.svg"
 
-export function BaseHeader() {
+export function BaseHeader({btnColour}) {
   return (
     <header className="content-grid">
       <nav className="base-nav">
@@ -14,7 +14,7 @@ export function BaseHeader() {
       
         <div className="button">
           <Link to="/login" className="button--login">Log In</Link>
-          <Link to="/signup" className="button--signup"> Sign Up</Link>
+          <Link to="/signup" className={`button--signup ${btnColour}`}> Sign Up</Link>
         </div>
       </nav>
     </header>

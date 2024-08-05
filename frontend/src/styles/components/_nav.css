@@ -16,25 +16,43 @@
       border-radius: 0.5rem;
       border: 1px solid #e5e7eb;
       transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: #efefef;
-      }
     }
 
     a.button--signup {
       color: white;
       font-weight: var(--fw-medium);
-      background-color: var(--clr-blue-400);
       border-radius: 0.5rem;
       transition: background-color 0.3s ease;
+    }
 
-      &:hover {
-        background-color: var(--clr-blue-500);
-      }
+    a.button--login:hover {
+      background-color: #e5e7eb;
     }
   }
 }
+
+.btn-red {
+  background-color: var(--clr-yellow-400);
+}
+
+.btn-red:hover {
+  background-color: var(--clr-yellow-500);
+}
+.btn-purple {
+  background-color: var(--clr-purple-400);
+}
+
+.btn-purple:hover {
+  background-color: var(--clr-purple-500);
+}
+.btn-blue {
+  background-color: var(--clr-blue-400);
+}
+
+.btn-blue:hover {
+  background-color: var(--clr-blue-500);
+}
+
 
 .auth-nav {
   background-color: var(--clr-neutral-100);
