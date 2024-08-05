@@ -29,9 +29,16 @@ input::placeholder {
     color: var(--clr-neutral-600);
 }
 
+.auth-page__image {
+  margin: 0 auto;
+  width: 300px;
+}
+
 .auth-form {
     display: grid;
     gap: 1rem;
+    width: 400px;
+    margin: 0 auto;
 }
 
 .auth-form__user-input {
@@ -91,10 +98,16 @@ form .auth-form__error {
   }
 }
 
-@media (width > 450px) {
-    
-    .auth-page__content {
-        width: 400px;
-        margin: 0 auto;
-    }
+
+@media ( width > 990px ) {
+
+  .auth-page__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .auth-page__image {
+    width: 600px;
+  }  
 }
