@@ -97,7 +97,7 @@ export function SignUpPage() {
                 <input id="password" className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Create a secure password" type="password" value={password} onChange={handleInputChange}/>
                 {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
               </div>
-              <button type="submit" className={`auth-form__button ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Create account</button>
+              <button type="submit" className={`auth-form__button auth-form__btn-green ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Create account</button>
               {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
             </form>
             <p className="auth-form__redirect">Already have an account? {" "}
