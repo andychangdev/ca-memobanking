@@ -6,7 +6,7 @@ input {
 }
 
 input:focus-visible {
-  border-color: var(--clr-blue);
+  border-color: var(--clr-blue-500);
   outline: none;
 }
 
@@ -15,28 +15,30 @@ input::placeholder {
 }
 
 .auth-page {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .auth-page__content {
-    display: grid;
-    gap: .5rem;
-    text-align: center;
+  display: grid;
+  gap: 0.5rem;
+  text-align: center;
 }
 
 .auth-page__content p {
-    font-size: 0.9rem;
-    color: var(--clr-neutral-600);
+  font-size: 0.8rem;
+  color: var(--clr-neutral-600);
 }
 
 .auth-form {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .auth-form__user-input {
-    display: grid;
-    gap: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .auth-form label {
@@ -45,21 +47,20 @@ input::placeholder {
   text-align: left;
 }
 
-.auth-form__input--error, .auth-form__input--error:focus-visible {
-  border-color: var(--clr-red);
+.auth-form__input--error,
+.auth-form__input--error:focus-visible {
+  border-color: var(--clr-red-500);
 }
 
 form .auth-form__error {
   font-size: 0.8rem;
-  color: var(--clr-red);
+  color: var(--clr-red-500);
   text-align: start;
 }
 
 .auth-form__button {
-  background-color: var(--clr-neutral-800);
   color: white;
-  font: inherit;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   border: 0;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -67,9 +68,20 @@ form .auth-form__error {
   transition: background-color 0.3s ease;
 }
 
-.auth-form__button:hover,
-.auth-form__button:focus-visible {
-  background-color: var(--clr-neutral-600);
+.auth-form__btn-green {
+  background-color: var(--clr-green-400);
+}
+.auth-form__btn-red {
+  background-color: var(--clr-red-400);
+}
+
+.auth-form__btn-green:hover,
+.auth-form__btn-green:focus-visible {
+  background-color: var(--clr-green-500);
+}
+.auth-form__btn-red:hover,
+.auth-form__btn-red:focus-visible {
+  background-color: var(--clr-red-500);
 }
 
 .auth-form__button--disabled {
@@ -86,16 +98,10 @@ form .auth-form__error {
   margin-top: 1rem;
 
   a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #007bff;
     text-decoration: underline;
   }
 }
 
-@media (width > 450px) {
-    
-    .auth-page__content {
-        width: 400px;
-        margin: 0 auto;
-    }
-}
+

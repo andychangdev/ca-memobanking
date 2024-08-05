@@ -3,7 +3,7 @@ body,
 #root {
   height: 100%;
   margin: 0;
-  background-color: #f3f3f1;
+  background-color: #ffffff;
 }
 
 main {
@@ -12,6 +12,11 @@ main {
   grid-template-rows: auto 1fr auto;
   align-items: start;
 }
+
+section {
+  margin: 3rem 0rem;
+}
+
 
 footer {
   grid-row-start: 3;

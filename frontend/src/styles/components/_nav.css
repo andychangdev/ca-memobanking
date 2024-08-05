@@ -1,9 +1,7 @@
 .base-nav {
   display: flex;
   background-color: var(--clr-neutral-100);
-  margin: 2rem 0rem;
-  padding: 1rem 2rem;
-  border-radius: 5rem;
+  padding: 2rem 0rem;
   gap: 4rem;
   align-items: center;
   justify-content: space-between;
@@ -14,44 +12,65 @@
 
     a {
       color: var(--clr-neutral-800);
-      padding: 0.8rem 1.2rem;
-      border-radius: 5rem;
+      padding: 0.4rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #e5e7eb;
       transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: #efefef;
-      }
     }
 
     a.button--signup {
       color: white;
-      background-color: var(--clr-neutral-800);
+      font-weight: var(--fw-medium);
+      border-radius: 0.5rem;
       transition: background-color 0.3s ease;
+    }
 
-      &:hover {
-        background-color: var(--clr-neutral-600);
-      }
+    a.button--login:hover {
+      background-color: #e5e7eb;
     }
   }
 }
 
+.btn-red {
+  background-color: var(--clr-yellow-400);
+}
+
+.btn-red:hover {
+  background-color: var(--clr-yellow-500);
+}
+.btn-purple {
+  background-color: var(--clr-purple-400);
+}
+
+.btn-purple:hover {
+  background-color: var(--clr-purple-500);
+}
+.btn-blue {
+  background-color: var(--clr-blue-400);
+}
+
+.btn-blue:hover {
+  background-color: var(--clr-blue-500);
+}
+
+
 .auth-nav {
   background-color: var(--clr-neutral-100);
   border-bottom: 1px solid rgb(223, 223, 223);
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin-bottom: 2rem;
 }
 
 .auth-nav.content-grid {
-    --padding-inline: 2rem;
-    --content-max-width:  200rem;
-    --breakout-max-width: 200rem;
+  --padding-inline: 2rem;
+  --content-max-width:  200rem;
+  --breakout-max-width: 200rem;
 }
 
 .dashboard-nav {
   background-color: var(--clr-neutral-100);
   border-bottom: 1px solid rgb(223, 223, 223);
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin-bottom: 2rem;
 }
 
@@ -83,7 +102,7 @@
 }
 
 .dashboard-nav.content-grid {
-    --padding-inline: 2rem;
-    --content-max-width:  200rem;
-    --breakout-max-width: 200rem;
+  --padding-inline: 2rem;
+  --content-max-width:  200rem;
+  --breakout-max-width: 200rem;
 }

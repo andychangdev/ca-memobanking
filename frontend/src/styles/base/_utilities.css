@@ -1,38 +1,50 @@
 /* Colors */
 :root {
-    /* Colour Palette */
-    --clr-neutral-800: #000000;
-    --clr-neutral-700: #222222;
-    --clr-neutral-600: #444444;
-    --clr-neutral-500: #666666; 
-    --clr-neutral-400: #888888; 
-    --clr-neutral-300: #aaaaaa; 
-    --clr-neutral-200: #cccccc;
-    --clr-neutral-100: #ffffff; 
+  /* Colour Palette */
+  --clr-neutral-800: #000000;
+  --clr-neutral-700: #222222;
+  --clr-neutral-600: #444444;
+  --clr-neutral-500: #666666;
+  --clr-neutral-400: #888888;
+  --clr-neutral-300: #aaaaaa;
+  --clr-neutral-200: #cccccc;
+  --clr-neutral-100: #ffffff;
 
-    --clr-red: #fa5252;
-    --clr-blue: #228be6;
-    --clr-yellow: #fab005;
-    --clr-green: #40c057;
-    --clr-purple: #7950f2;
+  --clr-red-500: #fa5252;
+  --clr-red-400: #ff8787;
+  --clr-blue-500: #228be6;
+  --clr-blue-400: #4dabf7;
+  --clr-yellow-500: #fab005;
+  --clr-yellow-400: #ffd43b;
+  --clr-green-500: #40c057;
+  --clr-green-400: #69db7c;
+  --clr-purple-500: #7950f2;
+  --clr-purple-400: #9775fa;
 
-    /* Font Family */
-    --ff-regular: "Inter", Helvetica, Arial, sans-serif;
+  /* Font Family */
+  --ff-regular: "Inter", Helvetica, Arial, sans-serif;
 
+  /* Font Size */
+  --fs-regular: 0.9rem;
+  --fs-medium: 1.5rem;
+  --fs-large: 2.2rem;
+
+  /* Font Weight */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Spacer */
+  --spacer-300: 0.5rem;
+  --spacer-400: 1rem;
+  --spacer-500: 2rem;
+}
+
+@media (width > 900px) {
+  :root {
     /* Font Size */
-    --fs-regular: 1rem;
-    --fs-medium: 1.7rem;
-    --fs-large: 2rem;
-
-    /* Font Weight */
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-bold: 700;
-
-    /* Spacer */
-    --spacer-300: 0.5rem;
-    --spacer-400: 1rem;
-    --spacer-500: 2rem;
+    --fs-medium: 1.8rem;
+    --fs-large: 3rem;
   }
-  
+}

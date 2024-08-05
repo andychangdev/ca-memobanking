@@ -25,3 +25,21 @@
   .content-grid > .full-width {
     grid-column: full-width;
   }
+
+  .grid-container__image {
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 2rem;
+  }
+
+@media (width > 990px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .grid-container__image {
+      width: 600px;
+    }
+  }
