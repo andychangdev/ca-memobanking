@@ -16,6 +16,9 @@ app.get("/", (request, response, next) => {
 const userRoutes = require("./controller/UserRoutes")
 app.use("/users", userRoutes);
 
+const emotionRoutes = require("./controller/EmotionRoutes")
+app.use("/emotions", emotionRoutes);
+
 
 app.get("*", (request, response) => {
   response.status(404).json({
