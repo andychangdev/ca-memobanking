@@ -8,7 +8,7 @@ const router = express.Router();
 
 
 // Add Emotion Entry
-router.post("/add-entry", verifyToken, async (request, response) => {
+router.post("/", verifyToken, async (request, response) => {
     try {
         const userId = request.user.id;
         const { type, content } = request.body; 
@@ -38,7 +38,7 @@ router.post("/add-entry", verifyToken, async (request, response) => {
 })
 
 // Get All Emotion Entries
-router.get("/get-all-emotions", verifyToken, async (request, response) => {
+router.get("/", verifyToken, async (request, response) => {
     try {
         const userId = request.user.id;
 
@@ -55,7 +55,7 @@ router.get("/get-all-emotions", verifyToken, async (request, response) => {
 })
 
 // Delete Emotion Entry
-router.delete("/delete-emotion/:entryId", verifyToken, async (request, response) => {
+router.delete("/:entryId", verifyToken, async (request, response) => {
     try {
         const userId = request.user.id;
         const entryId = request.params.entryId;
