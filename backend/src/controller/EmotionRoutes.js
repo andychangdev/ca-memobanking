@@ -37,12 +37,20 @@ router.post("/", verifyToken, async (request, response) => {
       }
 })
 
-// Get All Emotion Entries
+// Get All Emotion Entries or by type via /?type=emotion
 router.get("/", verifyToken, async (request, response) => {
     try {
         const userId = request.user.id;
+        const { type } = request.query;
 
-        const entries = await Emotion.find({ userId: userId }).sort({ createdOn: -1 });
+        const filter = { userId: userId };
+        if (type) {
+            filter.type = type;
+        }
+
+        console.log(filter)
+
+        const entries = await Emotion.find(filter).sort({ createdOn: -1 });
 
         return response.json({
             entries,
