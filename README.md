@@ -252,6 +252,11 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 <details>
 <summary>28-07-2024</summary>
 
+### Summary of Changes: 
+- Setup Frontend [Completed]
+- Create App Homepage [2/3]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/8d9630caed72bc7ea6ee85a7081fa9eea887298d">⛙ Github Merge Pull #1: feature/static-site</a>
+
 **Trello Kanban:**
 <img src="./docs/kanban/part_b/28-07-2024.jpeg" width="1280">
 
@@ -265,8 +270,13 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 </details>
 
 
+
 <details>
 <summary>01-08-2024</summary>
+
+### Summary of Changes:
+- Create User Authentication UI [2/3]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/192ae47d742f83ebbcc1766c2b92ff98cee98621">⛙ Github Merge Pull #2: feature/auth-ui</a>
 
 **Trello Kanban:**
 <img src="./docs/kanban/part_b/01-08-2024.jpeg" width="1280">
@@ -279,8 +289,13 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 <img src="./docs/checklists/part_b/create_user_authentication_ui_v2.png" width="500">
 
+### Summary of Changes:
+- Setup Backend [Completed]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/07e10691562add17ff733c366ce810704d901658">⛙ Github Merge Pull #3: feature/auth-backend</a>
+
 **Trello Kanban:**
 <img src="./docs/kanban/part_b/01-08-2024_v2.jpeg" width="1280">
+
 
 **Checklist: Create User Authentication**
 
@@ -296,8 +311,58 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 <details>
 <summary>02-08-2024</summary>
 
+### Summary of Changes:
+- Create User User Module [1/2]
+- Create User Authentication [4/4]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/07e10691562add17ff733c366ce810704d901658">⛙ Github Merge Pull #3: feature/auth-backend</a>
+
 **Trello Kanban:**
 <img src="./docs/kanban/part_b/02-08-2024.jpeg" width="1280">
+
+</details>
+
+<details>
+<summary>03-08-2024</summary>
+
+### Summary of Changes:
+- Create User Authentication UI [3/3]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/bf8fbb021be3b4c2e47d5bcd69a5e0977c880cbd">⛙ Github Merge Pull #4: feature/signup-frontend</a>
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/eae7905a2f1832ec3acb44505d06b6bc00c56f45">⛙ Github Merge Pull #5: feature/login-frontend</a>
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/591f06bae405d071564cab0263a56008a10453db">⛙ Github Merge Pull #6: feature/auth-api-integration</a>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/03-08-2024.jpeg" width="1280">
+
+</details>
+
+</details>
+
+<details>
+<summary>04-08-2024</summary>
+
+### Summary of Changes:
+- Create User Module [2/2] (Create get user data route and integration)
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/aa8c245ccb30672637289c3711377411af0521f2">⛙ Github Merge Pull #7: feature/app-routing</a>
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/229d8d651445a70757939d9d03d757cc67ed416e">⛙ Github Merge Pull #8: feature/dashboard-frontend</a>
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/0ba0e18515f0cc8abdfd6802486fa3468eae4b64">⛙ Github Merge Pull #9: feature/dashboard-backend</a>
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/c62c22cfb3f5b79b19f773d9ee22484b89310ed2">⛙ Github Merge Pull #10: feature/dashboard-api-integration</a>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/04-08-2024.jpeg" width="1280">
+
+</details>
+
+</details>
+
+<details>
+<summary>05-08-2024</summary>
+
+### Summary of Changes:
+- Create App Homepage[3/3] (Populate app with content)
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/d33d47b29c32d11088b861a761eca0cc6ae3be2a">⛙ Github Merge Pull #11: feature/populate-content</a>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/05-08-2024.jpeg" width="1280">
 
 </details>
 
