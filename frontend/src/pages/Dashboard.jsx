@@ -82,24 +82,24 @@ export function Dashboard() {
             <DashboardHeader/>
             <section className="dashboard content-grid">
                 <div className="dashboard__container">
-                    <div className="dashboard__content">
-                        <h1>Hi {userData.username}</h1>
-                        <p>How are you feeling?</p>
+                    <div className="dashboard__greeting">
+                        <h1>Hey {userData.username}!</h1>
+                        <h3>How are you feeling?</h3>
                     </div>
-                    <div className="emotion-log">
-                        <h2> Emotion Log</h2>
-                        <div className="emotion-log__select-filter">
-                            <label>Filter By:</label>
-                            <select onChange={handleFilterTypeChange}>
-                                <option value="">All</option>
-                                <option value="joy">Joy</option>
-                                <option value="sadness">Sadness</option>
-                                <option value="anger">Anger</option>
-                                <option value="disgust">Disgust</option>
-                                <option value="fear">Fear</option>
-                            </select>
-                        </div>
 
+                    <div className="dashboard__emotion-filter">
+                        <label>Filter By:</label>
+                        <select onChange={handleFilterTypeChange}>
+                            <option value="">All</option>
+                            <option value="joy">Joy</option>
+                            <option value="sadness">Sadness</option>
+                            <option value="anger">Anger</option>
+                            <option value="disgust">Disgust</option>
+                            <option value="fear">Fear</option>
+                        </select>
+                    </div>
+
+                    <div className="dashboard__emotion-log">
                         {allEntries.map(allEntries => (
                             <EmotionEntry key={allEntries._id} entry={allEntries} />
                         ))}

@@ -59,6 +59,11 @@
     padding: 2rem;
     margin-bottom: 3rem;
   }
+
+  .hp-mission__image {
+    margin: 0 auto;
+    width: 350px;
+  }
 }
 
 .about-us__content {

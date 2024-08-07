@@ -1,14 +1,13 @@
 .dashboard.content-grid {
     --padding-inline: 2rem;
-    --content-max-width:  150rem;
-    --breakout-max-width: 180rem;
+    --content-max-width:  50rem;
+    --breakout-max-width: 60rem;
 }
 
-.dashboard__content {
-    border: 1px solid red;
-
+.dashboard__container {
+    display: grid;
+    gap: 1rem;
 }
-
 .dashboard__add-btn {
     width: 54px;
     height: 54px;
@@ -19,7 +18,7 @@
     border-radius: 5rem;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 2rem;
     bottom: 2rem;
 }
@@ -32,12 +31,12 @@
     font-size: 32px;
     color: white;
 }
-
+/* 
 @media ( width > 1280px ) {
     .dashboard__container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
         gap: 1rem;
     }
 }
-
+ */
