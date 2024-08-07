@@ -7,15 +7,15 @@ export function EmotionEntry({ entry }) {
 
     const getIndicatorClass = (type) => {
       switch (type) {
-        case 'joy':
+        case 'Joy':
           return 'emotion-entry__indicator-circle--joy';
-        case 'sadness':
+        case 'Sadness':
           return 'emotion-entry__indicator-circle--sadness';
-        case 'anger':
+        case 'Anger':
           return 'emotion-entry__indicator-circle--anger';
-        case 'disgust':
+        case 'Disgust':
           return 'emotion-entry__indicator-circle--disgust';
-        case 'fear':
+        case 'Fear':
           return 'emotion-entry__indicator-circle--fear';
         default:
           return '';

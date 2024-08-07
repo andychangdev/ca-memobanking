@@ -91,11 +91,11 @@ export function Dashboard() {
                         <label>Filter By:</label>
                         <select onChange={handleFilterTypeChange}>
                             <option value="">All</option>
-                            <option value="joy">Joy</option>
-                            <option value="sadness">Sadness</option>
-                            <option value="anger">Anger</option>
-                            <option value="disgust">Disgust</option>
-                            <option value="fear">Fear</option>
+                            <option value="Joy">Joy</option>
+                            <option value="Sadness">Sadness</option>
+                            <option value="Anger">Anger</option>
+                            <option value="Disgust">Disgust</option>
+                            <option value="Fear">Fear</option>
                         </select>
                     </div>
 
