@@ -1,0 +1,68 @@
+.emotion-entry__indicator-circle {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%; 
+  }
+  
+  .emotion-entry__indicator-circle--joy {
+    background-color: var(--clr-yellow-400)
+  }
+  
+  .emotion-entry__indicator-circle--sadness {
+    background-color: var(--clr-blue-400)
+  }
+  
+  .emotion-entry__indicator-circle--anger {
+    background-color: var(--clr-red-400)
+  }
+  
+  .emotion-entry__indicator-circle--disgust {
+    background-color: var(--clr-green-400)
+  }
+  
+  .emotion-entry__indicator-circle--fear {
+    background-color: var(--clr-purple-400)
+  }
+
+.entry__data {
+  display: grid;
+  border: 1px solid #e5e7eb;
+  grid-template-columns: 50px 1fr 40px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.entry__type-indicator,
+.entry__details,
+.entry__content,
+.entry__actions {
+  display: grid;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.entry__date {
+    color: var(--clr-neutral-300);
+    font-style: italic;
+    font-weight: var(--fw-bold);
+}
+
+.entry__type {
+    font-weight: var(--fw-bold);
+}
+
+.entry__actions {
+    justify-content: center;
+}
+
+.entry__type-indicator {
+  justify-content: center;
+}
+
+.entry__content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+

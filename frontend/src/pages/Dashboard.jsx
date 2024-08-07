@@ -86,9 +86,9 @@ export function Dashboard() {
                         <h1>Hi {userData.username}</h1>
                         <p>How are you feeling?</p>
                     </div>
-                    <div className="dashboard__content">
+                    <div className="emotion-log">
                         <h2> Emotion Log</h2>
-                        <div className="filter">
+                        <div className="emotion-log__select-filter">
                             <label>Filter By:</label>
                             <select onChange={handleFilterTypeChange}>
                                 <option value="">All</option>
