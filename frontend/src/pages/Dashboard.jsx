@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { DashboardHeader } from "../components";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineAddReaction } from "react-icons/md"
 import api from "../utilities/apiClient";
-import { useNavigate } from "react-router-dom";
+import { DashboardHeader } from "../components";
 
 export function Dashboard() {
 
     const [userData, setUserData] = useState(null);
+    const [allEntries, setAllEntries] = useState([]);
     const navigate = useNavigate();
 
 
@@ -26,10 +27,26 @@ export function Dashboard() {
         }
     };
 
+
+    const getAllEntries = async () => {
+        try {
+            const response = await api.get("emotions/");
+
+            if (response.data && response.data.entries) {
+                setAllEntries(response.data.entries)
+            }
+        } catch (error) {
+            console.error("An unexpected error occurred while fetching user data:", error);
+        }
+    };
+
+
     useEffect(() => {
-      getUserData()
+      getUserData();
+      getAllEntries();
       return () => {}
     }, []);
+
 
     if (!userData) {
         return (
@@ -46,6 +63,7 @@ export function Dashboard() {
         );
     }    
 
+
     return (
         <main>
             <DashboardHeader/>
@@ -53,11 +71,9 @@ export function Dashboard() {
                 <div className="dashboard__container">
                     <div className="dashboard__content">
                         <h1>Hi {userData.username}</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi blanditiis quibusdam hic neque. Earum sed itaque nemo, maxime harum maiores dignissimos fugiat dolores adipisci fuga sequi similique reprehenderit?</p>
+                        <p>How are you feeling?</p>
                     </div>
                     <div className="dashboard__content">
-                        <h1>Dashboard</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi blanditiis quibusdam hic neque. Earum sed itaque nemo, maxime harum maiores aut dignissimos fugiat dolores adipisci fuga sequi similique reprehenderit?</p>
                     </div>
                 </div>
 
