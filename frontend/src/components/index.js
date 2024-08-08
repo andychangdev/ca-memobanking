@@ -1,4 +1,5 @@
 export * from "./AuthHeader"
 export * from "./BaseHeader"
 export * from "./DashboardHeader"
+export * from "./EmotionEntry"
 export * from "./Footer"

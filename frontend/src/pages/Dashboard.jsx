@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import { DashboardHeader } from "../components";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineAddReaction } from "react-icons/md"
 import api from "../utilities/apiClient";
-import { useNavigate } from "react-router-dom";
+import { DashboardHeader, EmotionEntry } from "../components";
 
 export function Dashboard() {
 
     const [userData, setUserData] = useState(null);
+    const [allEntries, setAllEntries] = useState([]);
+    const [filterType, setFilterType] = useState("");
     const navigate = useNavigate();
 
 
@@ -26,10 +28,38 @@ export function Dashboard() {
         }
     };
 
+
+    const getAllEntries = async () => {
+        try {
+            if (filterType !== "") {
+                const query = filterType;
+                const response = await api.get(`emotions/?type=${query}`);
+                if (response.data && response.data.entries) {
+                    setAllEntries(response.data.entries)
+                }
+            } else {
+                const response = await api.get("emotions/");
+                if (response.data && response.data.entries) {
+                    setAllEntries(response.data.entries)
+                }
+            }
+
+        } catch (error) {
+            console.error("An unexpected error occurred while fetching user entries:", error);
+        }
+    };
+
+
     useEffect(() => {
-      getUserData()
-      return () => {}
-    }, []);
+      getUserData();
+      getAllEntries();
+    }, [filterType]);
+
+
+    const handleFilterTypeChange = (event) => {
+        setFilterType(event.target.value);
+      };
+
 
     if (!userData) {
         return (
@@ -46,18 +76,33 @@ export function Dashboard() {
         );
     }    
 
+
     return (
         <main>
             <DashboardHeader/>
             <section className="dashboard content-grid">
                 <div className="dashboard__container">
-                    <div className="dashboard__content">
-                        <h1>Hi {userData.username}</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi blanditiis quibusdam hic neque. Earum sed itaque nemo, maxime harum maiores dignissimos fugiat dolores adipisci fuga sequi similique reprehenderit?</p>
+                    <div className="dashboard__greeting">
+                        <h1>Hey {userData.username}!</h1>
+                        <h3>How are you feeling?</h3>
                     </div>
-                    <div className="dashboard__content">
-                        <h1>Dashboard</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi blanditiis quibusdam hic neque. Earum sed itaque nemo, maxime harum maiores aut dignissimos fugiat dolores adipisci fuga sequi similique reprehenderit?</p>
+
+                    <div className="dashboard__emotion-filter">
+                        <label>Filter By:</label>
+                        <select onChange={handleFilterTypeChange}>
+                            <option value="">All</option>
+                            <option value="Joy">Joy</option>
+                            <option value="Sadness">Sadness</option>
+                            <option value="Anger">Anger</option>
+                            <option value="Disgust">Disgust</option>
+                            <option value="Fear">Fear</option>
+                        </select>
+                    </div>
+
+                    <div className="dashboard__emotion-log">
+                        {allEntries.map(allEntries => (
+                            <EmotionEntry key={allEntries._id} entry={allEntries} />
+                        ))}
                     </div>
                 </div>
 
