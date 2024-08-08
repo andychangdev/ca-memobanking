@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineAddReaction } from "react-icons/md"
 import api from "../utilities/apiClient";
-import { DashboardHeader, EmotionEntry } from "../components";
+import { AddEntry, DashboardHeader, EmotionEntry } from "../components";
 
 export function Dashboard() {
 
@@ -104,6 +104,8 @@ export function Dashboard() {
                             <EmotionEntry key={allEntries._id} entry={allEntries} />
                         ))}
                     </div>
+
+                    <AddEntry />
                 </div>
 
                 <button className="dashboard__add-btn" onClick={() => {} }><MdOutlineAddReaction className="dashboard__add-icon" /></button>

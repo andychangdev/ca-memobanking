@@ -1,0 +1,9 @@
+.add-entry {
+    display: grid;
+    gap: 1rem;
+}
+
+.add-entry__content {
+    display: grid;
+    gap: 0.5rem;
+}
