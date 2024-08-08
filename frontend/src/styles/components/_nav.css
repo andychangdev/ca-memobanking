@@ -8,11 +8,12 @@
 
   .button {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 
     a {
+      font-size: 0.8rem;
       color: var(--clr-neutral-800);
-      padding: 0.4rem 1rem;
+      padding: 0.5rem 0.5rem;
       border-radius: 0.5rem;
       border: 1px solid #e5e7eb;
       transition: background-color 0.3s ease;
@@ -105,4 +106,15 @@
   --padding-inline: 2rem;
   --content-max-width:  200rem;
   --breakout-max-width: 200rem;
+}
+
+@media (width > 430px ) {
+  .base-nav .button {
+      gap: 1rem;
+  
+      a {
+        font-size: 0.9rem;
+      }
+  
+    }
 }

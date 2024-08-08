@@ -13,8 +13,8 @@ export function BaseHeader({btnColour}) {
         </div>
       
         <div className="button">
-          <Link to="/login" className="button--login">Log In</Link>
-          <Link to="/signup" className={`button--signup ${btnColour}`}> Sign Up</Link>
+          <Link to="/login" className="button--login">Login</Link>
+          <Link to="/signup" className={`button--signup ${btnColour}`}>Register</Link>
         </div>
       </nav>
     </header>

@@ -78,7 +78,7 @@ export function SignUpPage() {
       <AuthHeader/>
       <section className="auth-page content-grid">
         <div className="grid-container">
-          <img className="auth-page__image" src={appJoinImg}></img>
+          <img className="grid-container__image" src={appJoinImg}></img>
           <div className="auth-page__content">
             <h1>Join Memobanking</h1>
             <p>Sign up for free!</p>
