@@ -108,7 +108,7 @@ export function Dashboard() {
                     </div>
 
                     <Modal isOpen={openModal.isVisible} onRequestClose={() => {}} style={{ overlay: { backgroundColor: "rgba(0,0,0,0.2)", display: "grid", alignItems: "end"}}} className={"dashboard__modal"}>
-                        <AddEntry onClose={() => {setOpenModal({ isVisible: false, data: null })}} />
+                        <AddEntry onClose={() => {setOpenModal({ isVisible: false, data: null })}} getAllEntries={getAllEntries} />
                     </Modal>
                 </div>
 
