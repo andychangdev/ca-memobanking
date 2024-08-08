@@ -87,7 +87,7 @@
   background-color: white;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
 }
@@ -97,8 +97,8 @@
   color: var(--clr-neutral-700);
 }
 
-.dashboard-nav__logout-icon:hover {
-  color: var(--clr-neutral-600);
+.dashboard-nav__logout-btn:hover {
+  background-color: #e5e7eb;
 }
 
 .dashboard-nav.content-grid {
