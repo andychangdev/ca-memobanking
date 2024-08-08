@@ -13,10 +13,12 @@ router.post("/", verifyToken, async (request, response) => {
         const userId = request.user.id;
         const { type, content } = request.body; 
 
-        const validationError = validateFields({ type, content });
-        if (validationError) {
-            return response.status(validationError.status).json({ message: validationError.message });
-        }
+        if (!type) {
+            return response.status(400).json({ message: "Please select an emotion from the list." });
+          }
+        if (!content) {
+            return response.status(400).json({ message: "Please describe why you feel this way." });
+          }
 
         const entry = new Emotion({
             userId: userId,
