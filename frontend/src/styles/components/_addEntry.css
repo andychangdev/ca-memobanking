@@ -137,13 +137,13 @@
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    background-color: var(--clr-blue-400);
+    background-color: var(--clr-neutral-700);
   }
 
   .add-entry__add-btn:hover {
-    background-color: var(--clr-blue-500);
+    background-color: var(--clr-neutral-600);
   }
 
   .add-entry__error {
-    color: var(--clr-red-400);
+    color: var(--clr-red-500);
   }
