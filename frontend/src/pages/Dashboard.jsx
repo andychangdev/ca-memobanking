@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Modal from "react-modal";
 import { MdOutlineAddReaction } from "react-icons/md"
 import api from "../utilities/apiClient";
 import { AddEntry, DashboardHeader, EmotionEntry } from "../components";
@@ -9,6 +10,7 @@ export function Dashboard() {
     const [userData, setUserData] = useState(null);
     const [allEntries, setAllEntries] = useState([]);
     const [filterType, setFilterType] = useState("");
+    const [openModal, setOpenModal] = useState({ isVisible: false, data: null,})
     const navigate = useNavigate();
 
 
@@ -105,10 +107,15 @@ export function Dashboard() {
                         ))}
                     </div>
 
-                    <AddEntry />
+                    <Modal isOpen={openModal.isVisible} onRequestClose={() => {}} style={{ overlay: { backgroundColor: "rgba(0,0,0,0.2)",}}}>
+                    <AddEntry onClose={() => {setOpenModal({ isVisible: false, data: null })}} />
+                    </Modal>
                 </div>
 
-                <button className="dashboard__add-btn" onClick={() => {} }><MdOutlineAddReaction className="dashboard__add-icon" /></button>
+                <button className="dashboard__add-btn" onClick={() => {
+                    setOpenModal({ isVisible: true, data: null })}}>
+                        <MdOutlineAddReaction className="dashboard__add-icon" />
+                </button>
             </section>
         </main>
     )

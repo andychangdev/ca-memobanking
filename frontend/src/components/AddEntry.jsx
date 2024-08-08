@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { MdClose } from "react-icons/md"
 
 
-export function AddEntry() {
+export function AddEntry({ onClose }) {
 
   const [selectedEmotion, setSelectedEmotion] = useState("");
   const [content, setContent] = useState("");
@@ -17,12 +18,17 @@ export function AddEntry() {
   return (
     <>
       <div className="add-entry">
+
+        <button className="add-entry__close-btn" onClick={onClose}>
+          <MdClose />
+        </button>
+        
         <div className="add-entry-emotion-select">
           <form>
             <input type="radio" id="Joy" name="emotion" value="Joy" checked={selectedEmotion === "Joy"} onChange={handleEmotionChange}
             /> 
             <label htmlFor="Joy">Joy</label>
-            
+
 
             <input type="radio" id="Sadness" name="emotion" value="Sadness" checked={selectedEmotion === "Sadness"} onChange={handleEmotionChange}
             />
