@@ -68,9 +68,8 @@ export function AddEntry({ onClose }) {
           />
         </div>
 
-        <div className="add-entry__add-btn">
-          <button onClick="">Add Emotion</button>
-        </div>
+        <button className="add-entry__add-btn" onClick="">Add Emotion</button>
+
       </div>
     </>
   );

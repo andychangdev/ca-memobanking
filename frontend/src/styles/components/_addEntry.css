@@ -30,6 +30,14 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.3s ease;
+}
+
+.add-entry__close-btn:hover {
+    background-color: #e5e7eb;
 }
 
 .add-entry__content {
@@ -84,13 +92,15 @@
   .circle {
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
     border-radius: 50%;
     border: 2px solid transparent;
-    transition: border-color 0.2s ease-in-out;
+    transition: width 0.2s linear, height 0.2s linear;
   }
   
   input[type="radio"]:checked + .circle {
-    border-color: black;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   
   .circle-joy {
@@ -116,4 +126,19 @@
   .emotion-label {
     margin-top: 0.5rem;
     text-align: center;
+  }
+
+  .add-entry__add-btn {
+    color: white;
+    font-weight: var(--fw-bold);
+    border: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: var(--clr-blue-400);
+  }
+
+  .add-entry__add-btn:hover {
+    background-color: var(--clr-blue-500);
   }
