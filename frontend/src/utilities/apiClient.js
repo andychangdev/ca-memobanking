@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://ca-memobanking.onrender.com"
 
 const api = axios.create({
     baseURL: BASE_URL,
