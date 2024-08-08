@@ -1,9 +1,119 @@
+.dashboard__modal {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+@media ( width > 990px ) {
+    .dashboard__modal {
+        margin: auto auto;
+        width: 600px;
+        border-radius: 1rem;
+    }
+}
+
 .add-entry {
     display: grid;
     gap: 1rem;
+}
+
+.add-entry__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-entry__close-btn {
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .add-entry__content {
     display: grid;
     gap: 0.5rem;
 }
+
+.add-entry__textarea {
+  width: 100%;
+  padding: 1rem; 
+  border: 1px solid var(--clr-neutral-200); 
+  border-radius: 0.8rem;
+  font-size: 0.9rem;
+  font-family: inherit; 
+  resize: vertical; 
+  color: var(--clr-neutral-800); 
+  transition: border-color 0.2s, box-shadow 0.2s; 
+}
+
+.add-entry__textarea:focus {
+  border-color: var(--clr-blue-400); 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  outline: none; 
+}
+
+.add-entry__textarea::placeholder {
+  color: var(--clr-neutral-200);
+  opacity: 1;
+}
+/* 
+.add-entry__title, .add-entry__emotion-select,.add-entry__content, .add-entry__add-btn, .add-entry__close-btn, .add-entry__select-container  {
+    border: 1px solid red;
+}  */
+
+.add-entry__select-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+  
+  .emotion-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input[type="radio"]:checked + .circle {
+    border-color: black;
+  }
+  
+  .circle-joy {
+    background-color: var(--clr-yellow-500);
+  }
+  
+  .circle-sadness {
+    background-color: var(--clr-blue-500);
+  }
+  
+  .circle-anger {
+    background-color: var(--clr-red-500);
+  }
+  
+  .circle-disgust {
+    background-color: var(--clr-green-500);
+  }
+  
+  .circle-fear {
+    background-color: var(--clr-purple-500);
+  }
+  
+  .emotion-label {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
