@@ -29,15 +29,19 @@ export function EmotionEntry({ entry }) {
           <div className="entry__type-indicator">
             <span className={`emotion-entry__indicator-circle ${getIndicatorClass(entry.type)}`}></span>
           </div>
-          <div className="entry__details">
-            <div>
-              <p className="entry__date">{formattedDate}</p>
-              <p className="entry__type">{entry.type}</p>
-            </div>
+
+          <div className="entry__type">
+            <p>{entry.type}</p>
           </div>
+
+          <div className="entry__date">
+            <p>{formattedDate}</p>
+          </div>
+
           <div className="entry__content">
             <p>{entry.content}</p>
           </div>
+
           <div className="entry__actions">
             <MdDelete onClick="" />
           </div>
