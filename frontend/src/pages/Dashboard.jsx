@@ -103,7 +103,7 @@ export function Dashboard() {
 
                     <div className="dashboard__emotion-log">
                         {allEntries.map(allEntries => (
-                            <EmotionEntry key={allEntries._id} entry={allEntries} />
+                            <EmotionEntry key={allEntries._id} entry={allEntries} getAllEntries={getAllEntries} />
                         ))}
                     </div>
 
