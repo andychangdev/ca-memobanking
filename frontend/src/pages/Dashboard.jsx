@@ -85,8 +85,8 @@ export function Dashboard() {
             <section className="dashboard content-grid">
                 <div className="dashboard__container">
                     <div className="dashboard__greeting">
-                        <h1>Hey {userData.username}!</h1>
-                        <h3>How are you feeling?</h3>
+                        <h1>Hey {userData.firstname}!</h1>
+                        <h3>Let’s capture today’s feelings ... </h3>
                     </div>
 
                     <div className="dashboard__emotion-filter">
@@ -103,7 +103,7 @@ export function Dashboard() {
 
                     <div className="dashboard__emotion-log">
                         {allEntries.map(allEntries => (
-                            <EmotionEntry key={allEntries._id} entry={allEntries} />
+                            <EmotionEntry key={allEntries._id} entry={allEntries} getAllEntries={getAllEntries} />
                         ))}
                     </div>
 

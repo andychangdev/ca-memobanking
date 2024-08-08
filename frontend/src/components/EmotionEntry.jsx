@@ -1,9 +1,26 @@
-import { MdDelete } from "react-icons/md";
+import { MdOutlineDelete} from "react-icons/md";
 import { format } from 'date-fns';
+import api from "../utilities/apiClient";
 
-export function EmotionEntry({ entry }) {
+export function EmotionEntry({ entry, getAllEntries }) {
 
     const formattedDate = format(new Date(entry.createdOn), "d MMMM yyyy");
+
+    const deleteEntry = async () => {
+      const entryId = entry._id;
+
+      try {
+        const response = await api.delete("/emotions/" + entryId);
+
+        if (response.data && response.status === 200) {
+          getAllEntries();
+        }
+      } catch (error) {
+        if(error.response && error.response.data && error.response.data.message) {
+          console.log("An unexpected error occurred while deleting data. Please try again.")
+        }
+      }
+    }
 
     const getIndicatorClass = (type) => {
       switch (type) {
@@ -24,27 +41,27 @@ export function EmotionEntry({ entry }) {
   
   return (
     <>
-      <div className="entry">
-        <div className="entry__data">
-          <div className="entry__type-indicator">
+      <div className="emotion-entry">
+        <div className="emotion-entry__data">
+          <div className="emotion-entry__type-indicator">
             <span className={`emotion-entry__indicator-circle ${getIndicatorClass(entry.type)}`}></span>
           </div>
 
-          <div className="entry__type">
+          <div className="emotion-entry__type">
             <p>{entry.type}</p>
           </div>
 
-          <div className="entry__date">
+          <div className="emotion-entry__date">
             <p>{formattedDate}</p>
           </div>
 
-          <div className="entry__content">
+          <div className="emotion-entry__content">
             <p>{entry.content}</p>
           </div>
 
-          <div className="entry__actions">
-            <MdDelete onClick="" />
-          </div>
+          <button className="emotion-entry__actions" onClick={deleteEntry} >
+            <MdOutlineDelete className="emotion-entry__delete"/>
+          </button>
         </div>
       </div>
     </>
