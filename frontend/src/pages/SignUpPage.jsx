@@ -40,7 +40,7 @@ export function SignUpPage() {
       }
     } catch (error) {
       if (error.message && error.message.includes("timeout")) {
-        setFormSubmitError("Looks like the server is still waking up. Please try again in a minute!");
+        setFormSubmitError("The server is waking up! Please try again in a minute.");
       } else if(error.response && error.response.data && error.response.data.message) {
         setFormSubmitError(error.response.data.message);
       } else {
