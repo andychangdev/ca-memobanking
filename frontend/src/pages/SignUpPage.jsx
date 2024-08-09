@@ -39,7 +39,9 @@ export function SignUpPage() {
         navigate("/dashboard")
       }
     } catch (error) {
-      if(error.response && error.response.data && error.response.data.message) {
+      if (error.message && error.message.includes("timeout")) {
+        setFormSubmitError("Looks like the server is still waking up. Please try again in a minute!");
+      } else if(error.response && error.response.data && error.response.data.message) {
         setFormSubmitError(error.response.data.message);
       } else {
         setFormSubmitError("An unexpected error occurred. Please try again")
