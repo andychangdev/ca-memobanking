@@ -26,6 +26,16 @@
     grid-column: full-width;
   }
 
+  .card-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+  }
+
   .grid-container__image {
     margin: 0 auto;
     width: 300px;
