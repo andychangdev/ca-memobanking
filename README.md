@@ -20,8 +20,6 @@
 
 <h3 align="center"><a href="https://github.com/andychangdev/ca-memobanking">📦 Github Repo</a></h3>
 
- <h3 align="center"><a href="">🎬 Presentation Video</a></h3>
-
 ## 🚀 Purpose
 
 In today's fast-paced, digitalised world, mental health has become more crucial than ever. Young people, in particular, are facing unprecedented levels of stress, anxiety, and depression. The pressures of social media, academic demands, and societal expectations have contributed to a growing mental health crisis among the youth. 
@@ -144,6 +142,7 @@ By providing a structured way to track and understand emotions, Memobanking aims
 | [React Router DOM](https://www.npmjs.com/package/react-router-dom) |  React Router DOM is flexible routing library for React apps. It allows developers to define routes and manage navigation within the app. In this application, React Router DOM was used to handle page routing, allowing users to navigate seamlessly across different pages within the application without reloading the entire page.
 | [React Icons](https://www.npmjs.com/package/react-icons) | React Icons is a library that provides a collection of customisable icons for use in React applications. In this application, React Icons was used for certain buttons across the user interface to simplify development process |
 | [Axios](https://www.npmjs.com/package/axios) | Axios is a promise-based HTTP client for making requests to remote servers. In this application, Axios was used to perform HTTP requests to fetch and send data between the frontend and backend API. |
+| [Date-fns](https://www.npmjs.com/package/date-fns) | Date-fns is a date utility library that provides simple functions for manipulating JavaScript dates in browser and Node.js. In this application, Date-fns was used to format the date of emotion entries. |
 | [Chart.js](https://www.npmjs.com/package/chart.js?activeTab=readme) | Text Here|
 
 
@@ -159,7 +158,7 @@ By providing a structured way to track and understand emotions, Memobanking aims
 | [Dotenv](https://www.npmjs.com/package/dotenv) | Dotenv provides a way to manage environment variables in a Node.js application. This library allows developers to keep sensitive data, such as JWT keys and database credentials, secure and organised. In this application, Dotenv was used to load environment variables for connecting to the MongoDB database and for creating and verifying JWT tokens, ensuring that sensitive information was not exposed in the codebase.
 | [Cors](https://www.npmjs.com/package/cors) | CORS is a security feature implemented in web browsers to control cross-origin requests which help prevent unauthorised access to resources. In this application, CORS was configured to allow cross-origin requests from anywhere without restrictions. While this approach is less secure, it allowed me to focus on the application's development and functionality without being constrained by cross-origin issues.|
 | [JSON Web Tokens](https://www.npmjs.com/package/jsonwebtoken) | JSON Web Tokens allows developers to add JSON Web Token (JWT) based authentication and authorisation to their application. JWT based authentication means it follows the RFC 7519 standard, which is an internet standard that defines a secure method for transmitting data between a client and a server using JSON format tokens. In this application, JWTs are used to authorize users during login and authenticate them before performing certain CRUD operations.
-| [BcryptJS](https://www.npmjs.com/package/bcryptjsn) | BcryptJS allows developers to use Bcrypt hashing algorithm to securely store passwords in their database. Bcrypt is a popular cryptographic algorithm designed to hash passwords by converting them into a string of characters that are highly resistant to various password-cracking techniques, such as brute force, rainbow table, and dictionary attacks. It is available in many programming languages and frameworks. In this application, the Javascript version of Bcrypt was used to hash the user's password during registration. This makes the application more secure and protected against unauthorised access to user accounts. |
+| [BcryptJS](https://www.npmjs.com/package/bcryptjsn) | BcryptJS allows developers to use Bcrypt hashing algorithm to securely store passwords in their database. Bcrypt is a popular cryptographic algorithm designed to hash passwords by converting them into a string of characters that are highly resistant to various password-cracking techniques, such as brute force, rainbow table, and dictionary attacks. It is available in many programming languages and frameworks. In this application, the Javascript version of Bcrypt was used to hash and salt the user's password during registration. This makes the application more secure and protected against unauthorised access to user accounts. |
 
 
 ## 📝 Project Development Log
@@ -325,7 +324,8 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 <summary>03-08-2024</summary>
 
 ### Summary of Changes:
-- Create User Authentication UI [3/3]
+- Create User Authentication UI [Completed]]
+- Create User Authentication [Completed]
 - <a href="https://github.com/andychangdev/ca-memobanking/commit/bf8fbb021be3b4c2e47d5bcd69a5e0977c880cbd">⛙ Github Merge Pull #4: feature/signup-frontend</a>
 - <a href="https://github.com/andychangdev/ca-memobanking/commit/eae7905a2f1832ec3acb44505d06b6bc00c56f45">⛙ Github Merge Pull #5: feature/login-frontend</a>
 - <a href="https://github.com/andychangdev/ca-memobanking/commit/591f06bae405d071564cab0263a56008a10453db">⛙ Github Merge Pull #6: feature/auth-api-integration</a>
@@ -335,13 +335,11 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 </details>
 
-</details>
-
 <details>
 <summary>04-08-2024</summary>
 
 ### Summary of Changes:
-- Create User Module [2/2] (Create get user data route and integration)
+- Create User Module [Completed] (Create get user data route and integration)
 - <a href="https://github.com/andychangdev/ca-memobanking/commit/aa8c245ccb30672637289c3711377411af0521f2">⛙ Github Merge Pull #7: feature/app-routing</a>
 - <a href="https://github.com/andychangdev/ca-memobanking/commit/229d8d651445a70757939d9d03d757cc67ed416e">⛙ Github Merge Pull #8: feature/dashboard-frontend</a>
 - <a href="https://github.com/andychangdev/ca-memobanking/commit/0ba0e18515f0cc8abdfd6802486fa3468eae4b64">⛙ Github Merge Pull #9: feature/dashboard-backend</a>
@@ -352,17 +350,63 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 </details>
 
-</details>
-
 <details>
 <summary>05-08-2024</summary>
 
 ### Summary of Changes:
-- Create App Homepage[3/3] (Populate app with content)
+- Create App Homepage[Completed] (Populate app with content)
 - <a href="https://github.com/andychangdev/ca-memobanking/commit/d33d47b29c32d11088b861a761eca0cc6ae3be2a">⛙ Github Merge Pull #11: feature/populate-content</a>
 
 **Trello Kanban:**
 <img src="./docs/kanban/part_b/05-08-2024.jpeg" width="1280">
+
+</details>
+
+<details>
+<summary>06-08-2024</summary>
+
+### Summary of Changes:
+- Create Emotion Module [5/5]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/fdc79fd9211734a8c1e4a31a4851f0cdc81f3792">⛙ Github Merge Pull #12: feature/emotion-entry-backend</a>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/06-08-2024.jpeg" width="1280">
+
+<img src="./docs/kanban/part_b/06-08-2024_v2.jpeg" width="1280">
+
+**Checklist: Create Emotion Module**
+
+<img src="./docs/checklists/part_b/create_emotion_module.png" width="500">
+
+</details>
+
+<details>
+<summary>07-08-2024</summary>
+
+### Summary of Changes:
+- Create User Dashboard
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/7b81aa71168c2fa24fb851224c8bdc6d46407b42">⛙ Github Merge Pull #13: feature/get-entries-integration</a>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/07-08-2024.jpeg" width="1280">
+
+</details>
+
+<details>
+<summary>08-08-2024</summary>
+
+### Summary of Changes:
+- Create Delete Emotion Feature [Completed]
+- Create Add Emotion Feature [Completed]
+- Create User Dashboard [Completed]
+- Create Emotion Module [Completed]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/23bbe47c7653344911ff49c2543cc05f8c0986ca">⛙ Github Merge Pull #14: feature/add-entry-integration</a>
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/e92a155dd2865c176cd4fd70ca9c818e134f7e03">⛙ Github Merge Pull #15: feature/delete-entry-integration</a>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/08-08-2024.jpeg" width="1280">
+
+<img src="./docs/kanban/part_b/08-08-2024_V2.jpeg" width="1280">
 
 </details>
 
