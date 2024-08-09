@@ -410,6 +410,33 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 </details>
 
+<details>
+<summary>09-08-2024</summary>
+
+### Summary of Changes:
+- Deploy Application [Completed]
+- Create Graphical Data Visualization [Completed]
+- Conduct Application Testing [Completed]
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/65581a275ee50fd0550bfe8ce1498c0eadee681a">⛙ Github Merge Pull #16: test/automated-testing-frontend</a>
+- <a href="https://github.com/andychangdev/ca-memobanking/commit/415f01c25dd0a4c5a8a2a726413888959e25446d">⛙ Github Merge Pull #17: feature/data-visualization</a>
+
+**Trello Kanban:**
+<img src="./docs/kanban/part_b/08-08-2024_V2.jpeg" width="1280">
+
+<img src="./docs/kanban/part_b/09-08-2024.jpeg" width="1280">
+
+<img src="./docs/kanban/part_b/09-08-2024_v2.jpeg" width="1280">
+
+**Checklist: Deploy Application**
+
+<img src="./docs/checklists/part_b/deploy_application.png" width="500">
+
+**Checklist: Conduct Application Testing**
+
+<img src="./docs/checklists/part_b/conduct_application_testing.png" width="500">
+
+</details>
+
 ## 💎 Application Testing
 
 ### Development Testing
