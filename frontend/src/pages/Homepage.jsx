@@ -1,6 +1,7 @@
 import { BaseHeader, Footer } from "../components";
 import appMissionImg from "../assets/images/app_mission.svg";
 import appBenefitsImg from "../assets/images/app_benefits.svg";
+import { Link } from "react-router-dom";
 
 
 export function HomePage() {
@@ -29,21 +30,33 @@ export function HomePage() {
 
                 <div className="hp-features">
                     <div className="card-container">
-                        <p><b>Track your emotions, not just feelings.</b></p>
-                        <p> Select your emotion, add a brief note if desired, and log it with ease. No complicated steps or overwhelming options.</p>
+                        <div>
+                            <p><b>Track your emotions, not just feelings.</b></p>
+                            <p> Select your emotion, add a brief note if desired, and log it with ease. No complicated steps or overwhelming options.</p>
+                        </div>
                     </div>
                     <div className="card-container">
-                        <p><b>A range of features you’ll find useful.</b></p> 
-                        <p>Log emotions, view history, analyze trends with graphs, and share your journey with others. Everything you need to understand your emotional patterns.</p>
+                        <div>
+                            <p><b>A range of features you’ll find useful.</b></p>
+                            <p>Log emotions, view history, analyze trends with graphs, and share your journey with others. Everything you need to understand your emotional patterns.</p>
+                        </div>
                     </div>
                     <div className="card-container">
-                        <p><b>Accessible anytime, anywhere.</b></p>
-                        <p>Use Memobanking on your mobile, tablet, or desktop. Enhance your self-awareness, boost mental health, and stay connected with your emotional wellbeing.</p>
+                        <div>
+                            <p><b>Accessible anytime, anywhere.</b></p>
+                            <p>Use Memobanking on your mobile, tablet, or desktop. Enhance your self-awareness, boost mental health, and stay connected with your emotional wellbeing.</p>
+                        </div>
                     </div>
                 </div>
-                <div className="card-container">
-                    <h2>Ready to start your journey?</h2>
-                    <p>Join us on a journey to self-awareness and emotional regulation. Start logging your emotions today and take the first step towards a healthier, happier you.</p>
+                <div className="hp-cta card-container">
+                    <div>
+                        <h2>Ready to start your journey?</h2>
+                        <p>Join us on a journey to self-awareness and emotional regulation. Start logging your emotions today and take the first step towards a healthier, happier you.</p>
+                    </div>
+                    
+                    <div className="hp-cta__content">
+                        <Link to="/signup" className="hp-cta__btn">Get started for free</Link>
+                    </div>
                 </div>
             </section>
             <Footer/>
