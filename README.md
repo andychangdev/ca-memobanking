@@ -14,8 +14,7 @@
 
 ## 📍 Links
 
-
-<h3 align="center"><a href="">🌐 Live Website</a>
+<h3 align="center"><a href="https://memobanking.netlify.app/">🌐 Live Website</a>
 </h3>
 
 <h3 align="center"><a href="https://github.com/andychangdev/ca-memobanking">📦 Github Repo</a></h3>
@@ -143,7 +142,7 @@ By providing a structured way to track and understand emotions, Memobanking aims
 | [React Icons](https://www.npmjs.com/package/react-icons) | React Icons is a library that provides a collection of customisable icons for use in React applications. In this application, React Icons was used for certain buttons across the user interface to simplify development process |
 | [Axios](https://www.npmjs.com/package/axios) | Axios is a promise-based HTTP client for making requests to remote servers. In this application, Axios was used to perform HTTP requests to fetch and send data between the frontend and backend API. |
 | [Date-fns](https://www.npmjs.com/package/date-fns) | Date-fns is a date utility library that provides simple functions for manipulating JavaScript dates in browser and Node.js. In this application, Date-fns was used to format the date of emotion entries. |
-| [Chart.js](https://www.npmjs.com/package/chart.js?activeTab=readme) | Text Here|
+| [Chart.js](https://www.npmjs.com/package/chart.js?activeTab=readme) | Chart.js is a Javascript library for data visualization which supports various types of graphs. In this application, Chart.js was used to display user's emotion entry data to increase user engagement and insight. By visualizing emotion trends and distributions, users can better understand their emotional patterns, which enhances their experience and encourages reflective practices|
 
 
 
