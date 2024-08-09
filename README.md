@@ -441,10 +441,22 @@ In this project, I have opted to use a Kanban workflow as my method of planning 
 
 ### Development Testing
 
-**DevTest.04-08-2024**
+**DevTest.04-08-2024: Auth CRUD Operations**
 <img src="./docs//application_testing/DevTest_04-08-2024.png" width="1280">
+
+**DevTest.04-08-2024: User Login and SignUp**
+<img src="./docs/application_testing/DevTest_04-08-2023_t2.png" width="1280">
+
+**DevTest.07-08-2024: GET User Data Route**
+<img src="./docs/application_testing/DevTest_07_08_2024.png" width="1280">
 
 ### Production Testing
 
-**ProdTest.04-08-2024**
-<img src="./docs/application_testing/ProdTest_04-08-2024.png" width="1280">
+**ProdTest.09-08-2024: Emotions CRUD Operations**
+<img src="./docs//application_testing/ProdTest_09_08_2024_t1.png" width="1280">
+
+**ProdTest.09-08-2024: Dashboard**
+<img src="./docs//application_testing/ProdTest_09_08_2024_t2.png" width="1280">
+
+**ProdTest.09-08-2024: GET Emotion Count Route**
+<img src="./docs//application_testing/ProdTest_09_08_2024_t3.png" width="1280">
