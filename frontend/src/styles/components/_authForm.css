@@ -32,8 +32,6 @@ input::placeholder {
 .auth-form {
   display: grid;
   gap: 1rem;
-  width: 400px;
-  margin: 0 auto;
 }
 
 .auth-form__user-input {
@@ -101,6 +99,13 @@ form .auth-form__error {
     font-size: 0.8rem;
     color: #007bff;
     text-decoration: underline;
+  }
+}
+
+@media ( width > 430px ) {
+  .auth-form {
+    margin: 0 auto;
+    width: 400px;
   }
 }
 
