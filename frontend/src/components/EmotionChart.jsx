@@ -1,16 +1,16 @@
 import { Bar } from "react-chartjs-2";
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend } from "chart.js";
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip } from "chart.js";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip);
 
-export function EmotionChart({}) {
+export function EmotionChart({ emotionCount }) {
 
     const barChartData = {
         labels: ["Joy", "Sadness", "Anger", "Disgust", "Fear"],
         datasets: [
             {
                 label: "Emotions",
-                data: [12, 9, 7, 4, 6],
+                data: emotionCount,
                 backgroundColor: [
                     "rgba(255, 205, 86, 0.7)",   // Joy
                     "rgba(54, 162, 235, 0.7)",   // Sadness
@@ -35,12 +35,6 @@ export function EmotionChart({}) {
             },
         },
         plugins: {
-            legend: {
-                position: 'top',
-                labels: {
-                    backgroundColor: "red",
-                }
-            },
             tooltip: {
                 mode: "index",
                 intersect: false,

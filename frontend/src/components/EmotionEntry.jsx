@@ -2,7 +2,7 @@ import { MdOutlineDelete} from "react-icons/md";
 import { format } from 'date-fns';
 import api from "../utilities/apiClient";
 
-export function EmotionEntry({ entry, getAllEntries }) {
+export function EmotionEntry({ entry, getAllEntries, getEmotionCount }) {
 
     const formattedDate = format(new Date(entry.createdOn), "d MMMM yyyy");
 
@@ -14,6 +14,7 @@ export function EmotionEntry({ entry, getAllEntries }) {
 
         if (response.data && response.status === 200) {
           getAllEntries();
+          getEmotionCount();
         }
       } catch (error) {
         if(error.response && error.response.data && error.response.data.message) {
