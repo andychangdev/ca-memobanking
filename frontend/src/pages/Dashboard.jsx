@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import { MdOutlineAddReaction } from "react-icons/md"
 import api from "../utilities/apiClient";
 import { AddEntry, DashboardHeader, EmotionEntry } from "../components";
+import { EmotionChart } from "../components/EmotionChart";
 
 export function Dashboard() {
 
@@ -12,7 +13,6 @@ export function Dashboard() {
     const [filterType, setFilterType] = useState("");
     const [openModal, setOpenModal] = useState({ isVisible: false, data: null,})
     const navigate = useNavigate();
-
 
     const getUserData = async () => {
         try {
@@ -88,6 +88,10 @@ export function Dashboard() {
                         <h1>Hey {userData.firstname}!</h1>
                         <h3>Let’s capture today’s feelings ... </h3>
                     </div>
+
+                    <div className="dashboard__chart">
+                        <EmotionChart />
+                    </div>  
 
                     <div className="dashboard__emotion-filter">
                         <label>Filter By:</label>
