@@ -4,15 +4,16 @@ import Modal from "react-modal";
 import { MdOutlineAddReaction } from "react-icons/md"
 import api from "../utilities/apiClient";
 import { AddEntry, DashboardHeader, EmotionEntry } from "../components";
+import { EmotionChart } from "../components/EmotionChart";
 
 export function Dashboard() {
 
     const [userData, setUserData] = useState(null);
     const [allEntries, setAllEntries] = useState([]);
     const [filterType, setFilterType] = useState("");
+    const [emotionCount, setEmotionCount] = useState([]);
     const [openModal, setOpenModal] = useState({ isVisible: false, data: null,})
     const navigate = useNavigate();
-
 
     const getUserData = async () => {
         try {
@@ -50,6 +51,22 @@ export function Dashboard() {
             console.error("An unexpected error occurred while fetching user entries:", error);
         }
     };
+
+    const getEmotionCount = async () => {
+        try {
+            const response = await api.get("emotions/count");
+            if (response.data && response.data.emotionCount) {
+                setEmotionCount(response.data.emotionCount)
+                console.log(emotionCount)
+            }
+        } catch (error) {
+            console.error("An unexpected error occurred while fetching user data:", error);
+        }
+    }
+
+    useEffect(() => {
+        getEmotionCount();
+      }, []);
 
 
     useEffect(() => {
@@ -89,6 +106,10 @@ export function Dashboard() {
                         <h3>Let’s capture today’s feelings ... </h3>
                     </div>
 
+                    <div className="dashboard__chart">
+                        <EmotionChart emotionCount={emotionCount}/>
+                    </div>  
+
                     <div className="dashboard__emotion-filter">
                         <label>Filter By:</label>
                         <select onChange={handleFilterTypeChange}>
@@ -103,12 +124,12 @@ export function Dashboard() {
 
                     <div className="dashboard__emotion-log">
                         {allEntries.map(allEntries => (
-                            <EmotionEntry key={allEntries._id} entry={allEntries} getAllEntries={getAllEntries} />
+                            <EmotionEntry key={allEntries._id} entry={allEntries} getAllEntries={getAllEntries} getEmotionCount={getEmotionCount} />
                         ))}
                     </div>
 
                     <Modal isOpen={openModal.isVisible} onRequestClose={() => {}} style={{ overlay: { backgroundColor: "rgba(0,0,0,0.2)", display: "grid", alignItems: "end"}}} className={"dashboard__modal"}>
-                        <AddEntry onClose={() => {setOpenModal({ isVisible: false, data: null })}} getAllEntries={getAllEntries} />
+                        <AddEntry onClose={() => {setOpenModal({ isVisible: false, data: null })}} getAllEntries={getAllEntries} getEmotionCount={getEmotionCount} />
                     </Modal>
                 </div>
 

@@ -3,7 +3,7 @@ import api from "../utilities/apiClient";
 import { MdClose } from "react-icons/md"
 
 
-export function AddEntry({ getAllEntries, onClose }) {
+export function AddEntry({ getAllEntries, getEmotionCount, onClose }) {
 
   const [type, setType] = useState("");
   const [content, setContent] = useState("");
@@ -18,6 +18,7 @@ export function AddEntry({ getAllEntries, onClose }) {
 
       if (response.data && response.data.entry) {
         getAllEntries()
+        getEmotionCount()
         onClose()
       }
     } catch (error) {

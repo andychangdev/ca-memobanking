@@ -87,5 +87,27 @@ router.delete("/:entryId", verifyToken, async (request, response) => {
     }
 })
 
+// Get Emotion Count
+router.get("/count", verifyToken, async (request, response) => {
+    try {
+        const userId = request.user.id;
+        const types = ["Joy", "Sadness", "Anger", "Disgust", "Fear"];
+
+        const emotionCountPromises = types.map((emotion) =>
+            Emotion.countDocuments({ userId: userId, type: emotion })
+        );
+
+        const emotionCountArray = await Promise.all(emotionCountPromises);
+
+        return response.json({
+            emotionCount: emotionCountArray,
+            message: "Emotion count retrieved successfully",
+        });
+
+    } catch (error) {
+        console.log(error);
+        return response.status(500).json({ message: "Server Error", error: error.message });
+    }
+});
 
 module.exports = router;
