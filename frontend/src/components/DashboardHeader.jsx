@@ -2,12 +2,13 @@ import { NavLink, useNavigate } from "react-router-dom";
 import logo from "/logo.svg";
 import { MdLogout } from "react-icons/md"
 
+
 export function DashboardHeader() {
 
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.clear()
+    localStorage.clear();
     navigate("/");
   }
 
@@ -22,11 +23,9 @@ export function DashboardHeader() {
             </NavLink>
           </div>
           <button className="dashboard-nav__logout-btn" onClick={handleLogout}>
-          <MdLogout className="dashboard-nav__logout-icon"/>
+            <MdLogout className="dashboard-nav__logout-icon"/>
           </button>
-
         </div>
-        
       </nav>
     </header>
   );

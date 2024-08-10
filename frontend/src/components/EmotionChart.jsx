@@ -3,6 +3,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, BarElement,
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip);
 
+
 export function EmotionChart({ emotionCount }) {
 
     const barChartData = {
@@ -42,8 +43,6 @@ export function EmotionChart({ emotionCount }) {
         },
     };
 
-  return (
-    <Bar options={options} data={barChartData} />
-  );
+    return <Bar options={options} data={barChartData} />;
 }
 

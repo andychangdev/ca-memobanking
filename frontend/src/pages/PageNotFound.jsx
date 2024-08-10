@@ -1,6 +1,8 @@
 import { BaseHeader, Footer } from "../components";
 
+
 export function PageNotFound() {
+
     return (
         <main>
             <BaseHeader/>

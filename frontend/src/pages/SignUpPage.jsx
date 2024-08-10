@@ -22,10 +22,8 @@ export function SignUpPage() {
   const isFormValid = !usernameError && !firstnameError && !lastnameError && !passwordError;
   const isFormEmpty = !username || !firstname || !lastname || !password;
 
-
   const handleSignUp = async (event) => {
     event.preventDefault();
-
     try {
       const response = await api.post("/users/signup", {
         username: username,
@@ -33,11 +31,11 @@ export function SignUpPage() {
         lastname: lastname,
         password: password,
       })
-
       if (response.data && response.data.token) {
         localStorage.setItem("token", response.data.token);
         navigate("/dashboard")
       }
+
     } catch (error) {
       if (error.message && error.message.includes("timeout")) {
         setFormSubmitError("The server is waking up! Please try again in a minute.");
@@ -48,7 +46,6 @@ export function SignUpPage() {
       }
     }
   }
-
 
   const handleInputChange = (event) => {
     const { id, value } = event.target;
@@ -74,7 +71,6 @@ export function SignUpPage() {
     }
   };
 
-
   return (
     <main>
       <AuthHeader/>
@@ -87,21 +83,53 @@ export function SignUpPage() {
             <form className="auth-form" onSubmit={handleSignUp}>
               <div className="auth-form__user-input">
                 <label htmlFor="username">Username</label>
-                <input id="username" className={`${usernameError ? "auth-form__input--error" : ""}`} placeholder="Choose a unique username" type="text" value={username} onChange={handleInputChange} />
+                <input 
+                  id="username" 
+                  className={`${usernameError ? "auth-form__input--error" : ""}`} 
+                  placeholder="Choose a unique username" 
+                  type="text" value={username} 
+                  onChange={handleInputChange} />
                 {usernameError ? <p className="auth-form__error">{usernameError}</p> : null}
+
                 <label htmlFor="firstname">Firstname</label>
-                <input id="firstname" className={`${firstnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your first name" type="text" value={firstname} onChange={handleInputChange}/>
+                <input 
+                  id="firstname" 
+                  className={`${firstnameError ? "auth-form__input--error" : ""}`} 
+                  placeholder="Enter your first name" 
+                  type="text" 
+                  value={firstname} 
+                  onChange={handleInputChange}/>
                 {firstnameError ? <p className="auth-form__error">{firstnameError}</p> : null}
+
                 <label htmlFor="lastname">Lastname</label>
-                <input id="lastname" className={`${lastnameError ? "auth-form__input--error" : ""}`} placeholder="Enter your last name" type="text" value={lastname} onChange={handleInputChange}/>
+                <input 
+                  id="lastname" 
+                  className={`${lastnameError ? "auth-form__input--error" : ""}`} 
+                  placeholder="Enter your last name" 
+                  type="text" 
+                  value={lastname} 
+                  onChange={handleInputChange}/>
                 {lastnameError ? <p className="auth-form__error">{lastnameError}</p> : null}
+
                 <label htmlFor="password">Password</label>
-                <input id="password" className={`${passwordError ? "auth-form__input--error" : ""}`} placeholder="Create a secure password" type="password" value={password} onChange={handleInputChange}/>
+                <input 
+                  id="password" 
+                  className={`${passwordError ? "auth-form__input--error" : ""}`} 
+                  placeholder="Create a secure password" 
+                  type="password" 
+                  value={password} 
+                  onChange={handleInputChange}/>
                 {passwordError ? <p className="auth-form__error">{passwordError}</p> : null}
               </div>
-              <button type="submit" className={`auth-form__button auth-form__btn-green ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} disabled={!isFormValid || isFormEmpty}>Create account</button>
+
+              <button 
+                type="submit" 
+                className={`auth-form__button auth-form__btn-green ${!isFormValid || isFormEmpty ? "auth-form__button--disabled" : ""}`} 
+                disabled={!isFormValid || isFormEmpty}>Create account
+              </button>
               {formSubmitError ? <p className="auth-form__error">{formSubmitError}</p> : null}
             </form>
+
             <p className="auth-form__redirect">Already have an account? {" "}
                 <Link to="/login"> Log In</Link>
             </p>

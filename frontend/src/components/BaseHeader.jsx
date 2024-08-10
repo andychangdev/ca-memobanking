@@ -1,7 +1,9 @@
 import { NavLink, Link } from "react-router-dom";
 import logo from "/logo.svg"
 
+
 export function BaseHeader({btnColour}) {
+  
   return (
     <header className="content-grid">
       <nav className="base-nav">

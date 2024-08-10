@@ -1,7 +1,9 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "/logo.svg";
 
+
 export function AuthHeader() {
+  
   return (
     <header>
       <nav className="auth-nav content-grid">
