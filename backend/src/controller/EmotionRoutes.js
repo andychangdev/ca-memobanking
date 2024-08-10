@@ -1,5 +1,4 @@
 const express = require("express");
-
 const Emotion = require("../models/EmotionModel.js")
 const { verifyToken } = require("../utilities/verifyToken.js");
 const { validateFields } = require("../utilities/helperFunctions.js");
@@ -15,10 +14,10 @@ router.post("/", verifyToken, async (request, response) => {
 
         if (!type) {
             return response.status(400).json({ message: "Please select an emotion from the list." });
-          }
+          };
         if (!content) {
             return response.status(400).json({ message: "Please describe why you feel this way." });
-          }
+          };
 
         const entry = new Emotion({
             userId: userId,
@@ -31,13 +30,14 @@ router.post("/", verifyToken, async (request, response) => {
         return response.json({
             entry,
             message: "Emotion entry added successfully"
-        })
+        });
 
     } catch (error) {
         console.log(error)
         return response.status(500).json({ message: "Server Error", error: error.message});
-      }
+      };
 })
+
 
 // Get All Emotion Entries or by type via /?type=emotion
 router.get("/", verifyToken, async (request, response) => {
@@ -58,6 +58,7 @@ router.get("/", verifyToken, async (request, response) => {
             entries,
             message: "All emotion entries retrieved successfully",
         });
+        
     } catch (error) {
         console.log(error)
         return response.status(500).json({ message: "Server Error", error: error.message});
@@ -81,6 +82,7 @@ router.delete("/:entryId", verifyToken, async (request, response) => {
         return response.json({
             message: "Emotion entry deleted successfully"
         })
+
     } catch (error) {
         console.log(error)
         return response.status(500).json({ message: "Server Error", error: error.message});

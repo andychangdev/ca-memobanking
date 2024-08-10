@@ -1,21 +1,17 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken")
-
 const dotenv = require("dotenv");
 dotenv.config();
-
 const User = require("../models/UserModel.js")
 const { validateFields } = require("../utilities/helperFunctions.js");
 const { verifyToken } = require("../utilities/verifyToken.js");
-
 
 const router = express.Router();
 
 
 // User SignUp
 router.post("/signup", async (request, response) => {
-
   try {
     const { username, firstname, lastname, password } = request.body;
 
@@ -45,20 +41,19 @@ router.post("/signup", async (request, response) => {
     const token = jwt.sign({ id: user._id }, process.env.JWT_KEY, { expiresIn: "1d", });
   
     return response.json({
-      user, token, message: "Sign Up Successful",
+      user, 
+      token, 
+      message: "Sign Up Successful",
     });
 
   } catch (error) {
     console.log(error)
     return response.status(500).json({ message: "Server Error", error: error.message});
   }
-
 });
-
 
 // User Login
 router.post("/login", async (request, response) => {
-
   try {
     const { username, password } = request.body;
 
@@ -80,16 +75,16 @@ router.post("/login", async (request, response) => {
     const token = jwt.sign({ id: user._id }, process.env.JWT_KEY, { expiresIn: "1d", });
   
     return response.json({
-      username, token, message: "Login Successful",
+      username, 
+      token, 
+      message: "Login Successful",
     });
 
   } catch (error){
     console.log(error)
     return response.status(500).json({ message: "Server Error", error: error.message});
   }
-
 });
-
 
 // User data
 router.get("/data", verifyToken, async (request, response) => {
@@ -110,6 +105,7 @@ router.get("/data", verifyToken, async (request, response) => {
       },
       message: "User data retrieved successfully",
     });
+    
   } catch (error) {
     console.log(error);
     return response.status(500).json({ message: "Server Error", error: error.message });
